@@ -9,20 +9,24 @@
 <body>
     <header>
         <h1>日语学习助手</h1>
-        <input type="text" id="newSceneInput" placeholder="输入新场景描述">
-        <button id="generateSceneBtn">生成新场景</button>
+        <div class="input-group">
+				    <input type="text" id="newSceneTitle" placeholder="新场景标题">
+				    <input type="text" id="newSceneDescription" placeholder="输入新场景描述">
+				    <button id="generateSceneBtn">生成</button>
+				    <button id="addSceneBtn">添加</button>
+				    <button id="deleteSceneBtn">删除</button>
+				</div>
     </header>
     <main>
         <aside id="sceneListContainer">
-            <h2>场景</h2>
+            <h3>场景</h3>
             <ul id="sceneList"></ul>
         </aside>
         <section id="sceneDetails">
-            <h2 id="sceneTitle">对话</h2>
+            <h3 id="sceneTitle">对话</h3>
             <p id="sceneDescription">场景描述</p>
             <div id="sceneDialog"></div>
             <div id="sceneTranslation"></div>
-            <button id="saveSceneBtn" style="display: none;">保存场景</button>
         </section>
     </main>
     <script src="static/js/utils.js"></script>
