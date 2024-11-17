@@ -1,1 +1,818 @@
-
+[
+    {
+        "id": 1,
+        "title": "自我介绍",
+        "description": "初次见面时的自我介绍。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "初めまして、田中です。よろしくお願いします。",
+                "romaji": "Hajimemashite, Tanaka desu. Yoroshiku onegaishimasu."
+            },
+            {
+                "speaker": "B",
+                "text": "初めまして、李と申します。こちらこそよろしくお願いします。",
+                "romaji": "Hajimemashite, Ri to moushimasu. Kochira koso yoroshiku onegaishimasu."
+            }
+        ],
+        "translation": [
+            "A: 初次见面，我是田中，请多多关照。",
+            "B: 初次见面，我姓李，也请多多关照。"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "询问时间",
+        "description": "询问现在的时间。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "すみません、今何時ですか？",
+                "romaji": "Sumimasen, ima nanji desu ka?"
+            },
+            {
+                "speaker": "B",
+                "text": "3時半です。",
+                "romaji": "Sanji han desu."
+            }
+        ],
+        "translation": [
+            "A: 不好意思，现在几点了？",
+            "B: 三点半。"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "点餐",
+        "description": "在餐厅点餐。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "メニューをください。",
+                "romaji": "Menyuu o kudasai."
+            },
+            {
+                "speaker": "B",
+                "text": "こちらになります。何になさいますか？",
+                "romaji": "Kochira ni narimasu. Nani ni nasaimasu ka?"
+            },
+            {
+                "speaker": "A",
+                "text": "ラーメンをお願いします。",
+                "romaji": "Raamen o onegaishimasu."
+            }
+        ],
+        "translation": [
+            "A: 请给我菜单。",
+            "B: 这是菜单，您要点什么？",
+            "A: 我要一份拉面。"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "购物付款",
+        "description": "在商店结账时的对话。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "これ、いくらですか？",
+                "romaji": "Kore, ikura desu ka?"
+            },
+            {
+                "speaker": "B",
+                "text": "2000円です。",
+                "romaji": "Nisen en desu."
+            },
+            {
+                "speaker": "A",
+                "text": "じゃあ、これをください。",
+                "romaji": "Jaa, kore o kudasai."
+            }
+        ],
+        "translation": [
+            "A: 这个多少钱？",
+            "B: 2000日元。",
+            "A: 那么，我买这个。"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "问路",
+        "description": "询问某地的方向。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "すみません、駅はどこですか？",
+                "romaji": "Sumimasen, eki wa doko desu ka?"
+            },
+            {
+                "speaker": "B",
+                "text": "この道をまっすぐ行って、右に曲がると駅があります。",
+                "romaji": "Kono michi o massugu itte, migi ni magaru to eki ga arimasu."
+            }
+        ],
+        "translation": [
+            "A: 请问，车站在哪里？",
+            "B: 顺着这条路直走，右转就有一个车站。"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "打电话",
+        "description": "用日语打电话。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "もしもし、田中さんですか？",
+                "romaji": "Moshimoshi, Tanaka-san desu ka?"
+            },
+            {
+                "speaker": "B",
+                "text": "はい、田中です。どちら様ですか？",
+                "romaji": "Hai, Tanaka desu. Dochira-sama desu ka?"
+            },
+            {
+                "speaker": "A",
+                "text": "李です。",
+                "romaji": "Ri desu."
+            }
+        ],
+        "translation": [
+            "A: 喂，请问是田中先生吗？",
+            "B: 是的，我是田中，请问您是哪位？",
+            "A: 我是李。"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "酒店入住",
+        "description": "在酒店办理入住手续。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "チェックインをお願いします。",
+                "romaji": "Chekku-in o onegaishimasu."
+            },
+            {
+                "speaker": "B",
+                "text": "ご予約のお名前を教えていただけますか？",
+                "romaji": "Go yoyaku no o-namae o oshiete itadakemasu ka?"
+            },
+            {
+                "speaker": "A",
+                "text": "李です。",
+                "romaji": "Ri desu."
+            }
+        ],
+        "translation": [
+            "A: 我想办理入住。",
+            "B: 请告诉我您的预订姓名。",
+            "A: 我姓李。"
+        ]
+    },
+    {
+        "id": 8,
+        "title": "点饮料",
+        "description": "在咖啡馆点饮料。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "コーヒーをお願いします。",
+                "romaji": "Koohii o onegaishimasu."
+            },
+            {
+                "speaker": "B",
+                "text": "サイズはどうされますか？",
+                "romaji": "Saizu wa dou saremasu ka?"
+            },
+            {
+                "speaker": "A",
+                "text": "Mサイズで。",
+                "romaji": "Emu saizu de."
+            }
+        ],
+        "translation": [
+            "A: 我要一杯咖啡。",
+            "B: 您要什么尺寸的？",
+            "A: 中杯。"
+        ]
+    },
+    {
+        "id": 9,
+        "title": "买票",
+        "description": "在车站买票。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "東京までの切符をください。",
+                "romaji": "Toukyou made no kippu o kudasai."
+            },
+            {
+                "speaker": "B",
+                "text": "片道ですか？往復ですか？",
+                "romaji": "Katamichi desu ka? Oufuku desu ka?"
+            },
+            {
+                "speaker": "A",
+                "text": "往復でお願いします。",
+                "romaji": "Oufuku de onegaishimasu."
+            }
+        ],
+        "translation": [
+            "A: 请给我一张到东京的票。",
+            "B: 单程还是往返？",
+            "A: 请给我往返票。"
+        ]
+    },
+    {
+        "id": 10,
+        "title": "看医生",
+        "description": "在医院看医生。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "お腹が痛いです。",
+                "romaji": "Onaka ga itai desu."
+            },
+            {
+                "speaker": "B",
+                "text": "いつから痛み始めましたか？",
+                "romaji": "Itsu kara itami hajimemashita ka?"
+            },
+            {
+                "speaker": "A",
+                "text": "昨日の夜からです。",
+                "romaji": "Kinou no yoru kara desu."
+            }
+        ],
+        "translation": [
+            "A: 我肚子痛。",
+            "B: 从什么时候开始痛的？",
+            "A: 从昨天晚上开始。"
+        ]
+    },
+    {
+        "id": 11,
+        "title": "道歉",
+        "description": "向别人道歉。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "すみませんでした。",
+                "romaji": "Sumimasen deshita."
+            },
+            {
+                "speaker": "B",
+                "text": "いいえ、大丈夫です。",
+                "romaji": "Iie, daijoubu desu."
+            }
+        ],
+        "translation": [
+            "A: 对不起。",
+            "B: 没关系。"
+        ]
+    },
+    {
+        "id": 12,
+        "title": "打车",
+        "description": "在日本打车。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "駅までお願いします。",
+                "romaji": "Eki made onegaishimasu."
+            },
+            {
+                "speaker": "B",
+                "text": "どちらの駅ですか？",
+                "romaji": "Dochira no eki desu ka?"
+            },
+            {
+                "speaker": "A",
+                "text": "東京駅です。",
+                "romaji": "Toukyou eki desu."
+            }
+        ],
+        "translation": [
+            "A: 请送我到车站。",
+            "B: 请问是哪个车站？",
+            "A: 东京站。"
+        ]
+    },
+    {
+        "id": 13,
+        "title": "借东西",
+        "description": "向朋友借用物品。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "ペンを貸してもらえますか？",
+                "romaji": "Pen o kashite moraemasu ka?"
+            },
+            {
+                "speaker": "B",
+                "text": "はい、どうぞ。",
+                "romaji": "Hai, douzo."
+            }
+        ],
+        "translation": [
+            "A: 可以借我一支笔吗？",
+            "B: 好的，给你。"
+        ]
+    },
+    {
+        "id": 14,
+        "title": "天气聊天",
+        "description": "日常的天气对话。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "今日は暑いですね。",
+                "romaji": "Kyou wa atsui desu ne."
+            },
+            {
+                "speaker": "B",
+                "text": "本当に暑いです。アイスが食べたいです。",
+                "romaji": "Hontou ni atsui desu. Aisu ga tabetai desu."
+            }
+        ],
+        "translation": [
+            "A: 今天真热啊。",
+            "B: 是啊，真热，我想吃冰淇淋。"
+        ]
+    },
+    {
+        "id": 15,
+        "title": "买礼物",
+        "description": "给朋友买礼物。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "このバッグ、プレゼント用に包んでください。",
+                "romaji": "Kono baggu, purezento you ni tsutsunde kudasai."
+            },
+            {
+                "speaker": "B",
+                "text": "はい、少々お待ちください。",
+                "romaji": "Hai, shoushou omachi kudasai."
+            }
+        ],
+        "translation": [
+            "A: 请把这个包包装成礼物。",
+            "B: 好的，请稍等。"
+        ]
+    },
+    {
+        "id": 16,
+        "title": "参加会议",
+        "description": "参加商务会议。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "会議を始めてもいいですか？",
+                "romaji": "Kaigi o hajimete mo ii desu ka?"
+            },
+            {
+                "speaker": "B",
+                "text": "はい、お願いします。",
+                "romaji": "Hai, onegaishimasu."
+            }
+        ],
+        "translation": [
+            "A: 我可以开始会议了吗？",
+            "B: 好的，请开始。"
+        ]
+    },
+    {
+        "id": 17,
+        "title": "办理登机",
+        "description": "在机场办理登机手续。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "東京行きの搭乗手続きをお願いします。",
+                "romaji": "Toukyou yuki no toujou tetsuzuki o onegaishimasu."
+            },
+            {
+                "speaker": "B",
+                "text": "パスポートを見せていただけますか？",
+                "romaji": "Pasupooto o misete itadakemasu ka?"
+            },
+            {
+                "speaker": "A",
+                "text": "はい、どうぞ。",
+                "romaji": "Hai, douzo."
+            }
+        ],
+        "translation": [
+            "A: 我要办理去东京的登机手续。",
+            "B: 请出示护照。",
+            "A: 好的，给您。"
+        ]
+    },
+    {
+        "id": 18,
+        "title": "请人帮忙",
+        "description": "请求别人帮忙。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "この資料をコピーしていただけますか？",
+                "romaji": "Kono shiryou o kopii shite itadakemasu ka?"
+            },
+            {
+                "speaker": "B",
+                "text": "はい、わかりました。",
+                "romaji": "Hai, wakarimashita."
+            }
+        ],
+        "translation": [
+            "A: 可以帮我复印这份资料吗？",
+            "B: 好的，我明白了。"
+        ]
+    },
+    {
+        "id": 19,
+        "title": "道别",
+        "description": "日常告别对话。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "じゃあ、また明日。",
+                "romaji": "Jaa, mata ashita."
+            },
+            {
+                "speaker": "B",
+                "text": "またね。気をつけて。",
+                "romaji": "Mata ne. Ki o tsukete."
+            }
+        ],
+        "translation": [
+            "A: 那么，明天见。",
+            "B: 再见，路上小心。"
+        ]
+    },
+    {
+        "id": 20,
+        "title": "问候与寒暄",
+        "description": "日常的问候和寒暄。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "お元気ですか？",
+                "romaji": "Ogenki desu ka?"
+            },
+            {
+                "speaker": "B",
+                "text": "はい、元気です。あなたは？",
+                "romaji": "Hai, genki desu. Anata wa?"
+            },
+            {
+                "speaker": "A",
+                "text": "私も元気です。",
+                "romaji": "Watashi mo genki desu."
+            }
+        ],
+        "translation": [
+            "A: 最近好吗？",
+            "B: 是的，我很好。你呢？",
+            "A: 我也很好。"
+        ]
+    },
+    {
+        "id": 21,
+        "title": "祝贺",
+        "description": "祝贺朋友取得成功。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "おめでとうございます！",
+                "romaji": "Omedetou gozaimasu!"
+            },
+            {
+                "speaker": "B",
+                "text": "ありがとうございます！",
+                "romaji": "Arigatou gozaimasu!"
+            }
+        ],
+        "translation": [
+            "A: 恭喜！",
+            "B: 谢谢！"
+        ]
+    },
+    {
+        "id": 22,
+        "title": "接待客人",
+        "description": "接待来访的客人。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "どうぞお入りください。",
+                "romaji": "Douzo o-hairi kudasai."
+            },
+            {
+                "speaker": "B",
+                "text": "お邪魔します。",
+                "romaji": "O-jama shimasu."
+            }
+        ],
+        "translation": [
+            "A: 请进。",
+            "B: 打扰了。"
+        ]
+    },
+    {
+        "id": 23,
+        "title": "安慰他人",
+        "description": "安慰遇到挫折的朋友。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "大丈夫ですよ。",
+                "romaji": "Daijoubu desu yo."
+            },
+            {
+                "speaker": "B",
+                "text": "ありがとうございます。",
+                "romaji": "Arigatou gozaimasu."
+            }
+        ],
+        "translation": [
+            "A: 没事的。",
+            "B: 谢谢。"
+        ]
+    },
+    {
+        "id": 24,
+        "title": "参加活动",
+        "description": "确认活动时间。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "イベントは何時からですか？",
+                "romaji": "Ibento wa nanji kara desu ka?"
+            },
+            {
+                "speaker": "B",
+                "text": "午後2時からです。",
+                "romaji": "Gogo niji kara desu."
+            }
+        ],
+        "translation": [
+            "A: 活动几点开始？",
+            "B: 下午两点开始。"
+        ]
+    },
+    {
+        "id": 25,
+        "title": "预约餐厅",
+        "description": "提前预订餐厅。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "レストランを予約したいです。",
+                "romaji": "Resutoran o yoyaku shitai desu."
+            },
+            {
+                "speaker": "B",
+                "text": "何名様ですか？",
+                "romaji": "Nanmei-sama desu ka?"
+            }
+        ],
+        "translation": [
+            "A: 我想预订餐厅。",
+            "B: 几位？"
+        ]
+    },
+    {
+        "id": 26,
+        "title": "拍照请求",
+        "description": "请别人帮忙拍照。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "写真を撮ってもらえますか？",
+                "romaji": "Shashin o totte moraemasu ka?"
+            },
+            {
+                "speaker": "B",
+                "text": "はい、いいですよ。",
+                "romaji": "Hai, ii desu yo."
+            }
+        ],
+        "translation": [
+            "A: 可以帮我拍张照片吗？",
+            "B: 好的，可以。"
+        ]
+    },
+    {
+        "id": 27,
+        "title": "医院挂号",
+        "description": "在医院挂号。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "診察をお願いしたいです。",
+                "romaji": "Shinsatsu o onegai shitai desu."
+            },
+            {
+                "speaker": "B",
+                "text": "保険証を見せてください。",
+                "romaji": "Hokenshou o misete kudasai."
+            }
+        ],
+        "translation": [
+            "A: 我想看医生。",
+            "B: 请出示保险证。"
+        ]
+    },
+    {
+        "id": 28,
+        "title": "买药",
+        "description": "在药店买药。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "頭痛薬をください。",
+                "romaji": "Zutsuu gusuri o kudasai."
+            },
+            {
+                "speaker": "B",
+                "text": "こちらになります。",
+                "romaji": "Kochira ni narimasu."
+            }
+        ],
+        "translation": [
+            "A: 请给我头痛药。",
+            "B: 这是您的药。"
+        ]
+    },
+    {
+        "id": 29,
+        "title": "退房",
+        "description": "在酒店退房。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "チェックアウトをお願いします。",
+                "romaji": "Chekku-auto o onegaishimasu."
+            },
+            {
+                "speaker": "B",
+                "text": "はい、確認します。",
+                "romaji": "Hai, kakunin shimasu."
+            }
+        ],
+        "translation": [
+            "A: 我想退房。",
+            "B: 好的，我来确认。"
+        ]
+    },
+    {
+        "id": 30,
+        "title": "选交通工具",
+        "description": "询问去某地的交通方式。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "ここから東京まで、どうやって行きますか？",
+                "romaji": "Koko kara Toukyou made, dou yatte ikimasu ka?"
+            },
+            {
+                "speaker": "B",
+                "text": "電車が便利です。",
+                "romaji": "Densha ga benri desu."
+            }
+        ],
+        "translation": [
+            "A: 从这里到东京怎么去？",
+            "B: 坐电车比较方便。"
+        ]
+    },
+    {
+        "id": 31,
+        "title": "询问价格",
+        "description": "询问商品是否有折扣。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "割引はありますか？",
+                "romaji": "Waribiki wa arimasu ka?"
+            },
+            {
+                "speaker": "B",
+                "text": "はい、10％割引です。",
+                "romaji": "Hai, juppasento waribiki desu."
+            }
+        ],
+        "translation": [
+            "A: 有折扣吗？",
+            "B: 有，打九折。"
+        ]
+    },
+    {
+        "id": 32,
+        "title": "银行业务",
+        "description": "在银行兑换外币。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "外貨を両替したいです。",
+                "romaji": "Gaika o ryougae shitai desu."
+            },
+            {
+                "speaker": "B",
+                "text": "どの通貨ですか？",
+                "romaji": "Dono tsuuka desu ka?"
+            }
+        ],
+        "translation": [
+            "A: 我想兑换外币。",
+            "B: 换哪种货币？"
+        ]
+    },
+    {
+        "id": 33,
+        "title": "购买地铁卡",
+        "description": "购买地铁乘车卡。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "一日券をください。",
+                "romaji": "Ichinichi ken o kudasai."
+            },
+            {
+                "speaker": "B",
+                "text": "600円になります。",
+                "romaji": "Roppyaku en ni narimasu."
+            }
+        ],
+        "translation": [
+            "A: 请给我一张一日乘车卡。",
+            "B: 600日元。"
+        ]
+    },
+    {
+        "id": 34,
+        "title": "问会场位置",
+        "description": "询问活动会场的位置。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "会場はどこですか？",
+                "romaji": "Kaijou wa doko desu ka?"
+            },
+            {
+                "speaker": "B",
+                "text": "2階の右側です。",
+                "romaji": "Nikai no migi gawa desu."
+            }
+        ],
+        "translation": [
+            "A: 会场在哪里？",
+            "B: 在二楼右侧。"
+        ]
+    },
+    {
+        "id": 35,
+        "title": "确认订单",
+        "description": "在线购物后确认订单。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "注文を確認したいです。",
+                "romaji": "Chuumon o kakunin shitai desu."
+            },
+            {
+                "speaker": "B",
+                "text": "注文番号を教えてください。",
+                "romaji": "Chuumon bangou o oshiete kudasai."
+            }
+        ],
+        "translation": [
+            "A: 我想确认订单。",
+            "B: 请告诉我订单编号。"
+        ]
+    },
+    {
+        "id": 36,
+        "title": "遇到熟人",
+        "description": "偶遇熟人时的对话。",
+        "dialog": [
+            {
+                "speaker": "A",
+                "text": "久しぶりですね！",
+                "romaji": "Hisashiburi desu ne!"
+            },
+            {
+                "speaker": "B",
+                "text": "本当に！お元気ですか？",
+                "romaji": "Hontou ni! Ogenki desu ka?"
+            }
+        ],
+        "translation": [
+            "A: 好久不见啊！",
+            "B: 是啊！你最近好吗？"
+        ]
+    }
+]
