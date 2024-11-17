@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日语学习助手</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>日语学习助手</h1>
+        <input type="text" id="newSceneInput" placeholder="输入新场景描述">
+        <button id="generateSceneBtn">生成新场景</button>
+    </header>
+    <main>
+        <aside id="sceneListContainer">
+            <h2>场景</h2>
+            <ul id="sceneList"></ul>
+        </aside>
+        <section id="sceneDetails">
+            <h2 id="sceneTitle">对话</h2>
+            <p id="sceneDescription">场景描述</p>
+            <div id="sceneDialog"></div>
+            <div id="sceneTranslation"></div>
+            <button id="saveSceneBtn" style="display: none;">保存场景</button>
+        </section>
+    </main>
+    <script src="static/js/utils.js"></script>
+    <script src="static/js/app.js"></script>
+</body>
+</html>
