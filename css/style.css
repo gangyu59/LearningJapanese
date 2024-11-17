@@ -1,54 +1,97 @@
 /* 全局样式 */
 body {
-    display: flex;
-    flex-direction: column;
     margin: 0;
     font-family: Arial, sans-serif;
-    height: 100vh; /* 让页面始终占满视口 */
+    height: 100vh; /* 页面高度为视口高度 */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* 禁止整个页面滚动 */
+    -webkit-overflow-scrolling: touch; /* 启用平滑滚动（移动设备） */
 }
 
 header {
-    padding: 10px;
+    padding: 10px 20px; /* 为 header 添加内边距 */
     background-color: #f4f4f4;
-    text-align: center;
     position: sticky; /* 固定在顶部 */
     top: 0;
     z-index: 1000;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); /* 添加底部阴影 */
 }
 
-header input {
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* 输入框和按钮的布局 */
+.input-group {
+    display: flex;
+    flex-wrap: wrap; /* 在小屏幕时自动换行 */
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px; /* 输入框和按钮之间的间距 */
+}
+
+.input-group input {
     padding: 5px;
     font-size: 16px;
-    width: 60%;
-    max-width: 400px;
-    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-header button {
+#newSceneTitle {
+    width: 120px; /* 新场景标题输入框宽度减小一半 */
+    max-width: 100%;
+}
+
+#newSceneDescription {
+    width: 260px; /* 新场景描述输入框占用更多空间 */
+    max-width: 100%;
+}
+
+.input-group button {
     padding: 6px 12px;
     font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+    white-space: nowrap; /* 防止按钮文字换行 */
 }
 
+.input-group button:hover {
+    background-color: #0056b3;
+}
+
+/* 主内容区域 */
 main {
     display: flex;
     flex: 1;
-    overflow: hidden; /* 隐藏多余滚动条 */
+    height: calc(100vh - 120px); /* 减去 header 和输入区域的高度 */
+    overflow: hidden; /* 禁止主区域整体滚动 */
 }
 
 /* 左侧清单样式 */
 #sceneListContainer {
-    flex: 1;
-    max-width: 300px; /* 限定左侧清单宽度 */
+    flex: 0.8; /* 左侧宽度占据1份 */
+    max-width: 260px; /* 限定左侧清单宽度 */
     background-color: #f9f9f9;
-    overflow-y: auto; /* 左侧清单可滚动 */
+    overflow-y: auto; /* 左侧清单独立滚动 */
     border-right: 1px solid #ddd;
+    height: 100%; /* 确保占满父容器高度 */
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch; /* 启用平滑滚动（移动设备） */
+    padding: 0; /* 去除多余内边距 */
 }
 
 #sceneList {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0; /* 去除默认内边距 */
 }
 
 #sceneList li {
@@ -61,21 +104,45 @@ main {
     background-color: #f0f0f0;
 }
 
+#sceneList li.selected {
+    background-color: #d0e7ff; /* 高亮选中的场景 */
+    font-weight: bold;
+}
+
+/* 标题对齐样式 */
+#sceneListContainer h3,
+#sceneDetails h3 {
+    margin: 0;
+		margin-top: 0px; /* 减少标题顶部的外边距 */
+    font-size: 18px;
+    padding: 10px; /* 内边距调整使标题更加突出 */
+    border-bottom: 1px solid #ddd; /* 标题下划线 */
+    background-color: #f4f4f4;
+    text-align: left; /* 左对齐 */
+}
+
 /* 右侧内容框样式 */
 #sceneDetails {
-    flex: 2; /* 右侧内容占据剩余空间 */
-    padding: 20px;
-    overflow-y: auto; /* 支持对话框自身滚动 */
-    position: sticky; /* 固定对话框 */
-    top: 0;
-    height: 100vh; /* 占满视口高度 */
+    flex: 2.2; /* 右侧宽度占据剩余空间 */
+		margin-left: 0px;
+		margin-right: 0px;
+    overflow-y: auto; /* 整体可滚动 */
     background-color: #fff;
+    padding: 5px;
+		padding-top: 0px;
+    height: 100%; /* 确保占满父容器高度 */
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch; /* 启用平滑滚动（移动设备） */
+    border-left: 1px solid #ddd; /* 增加边框与左侧内容分隔 */
 }
 
 #sceneDetails h2 {
-    margin: 0 0 10px 0;
-    font-size: 24px;
-    color: #333;
+    margin: 0;
+    font-size: 18px;
+    padding: 10px; /* 调整 padding 使标题对齐 */
+    border-bottom: 1px solid #ddd; /* 标题下划线 */
+    background-color: #f4f4f4;
+    text-align: left; /* 标题左对齐 */
 }
 
 #sceneDetails p {
@@ -84,26 +151,44 @@ main {
     margin: 10px 0;
 }
 
-#sceneDetails div {
-    margin: 10px 0;
+/* 对话框内容 */
+#sceneDialog {
+    margin-top: 10px;
     padding: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
 
-/* 按钮样式 */
+/* 翻译部分 */
+#sceneTranslation {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#sceneTranslation h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
 button {
     padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
+    background-color: #d3ebf5; /* 设置更浅的蓝色背景 */
+    color: black; /* 设置按钮文字颜色为黑色 */
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #b0dff0; /* 鼠标悬停时稍深的浅蓝色 */
 }
 
 .dialog-entry {
@@ -123,13 +208,4 @@ button:hover {
 
 .play-audio:hover {
     background-color: #0056b3;
-}
-
-#sceneTranslation h3 {
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #333;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
 }
