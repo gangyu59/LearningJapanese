@@ -73,8 +73,20 @@ function displayScene(scene) {
     });
 }
 
-// 生成新场景
-function generateScene() {
+// 验证场景格式
+function validateSceneFormat(scene) {
+    return (
+        scene &&
+        typeof scene.title === "string" &&
+        typeof scene.description === "string" &&
+        Array.isArray(scene.dialog) &&
+        scene.dialog.every(d => d.speaker && d.text && d.romaji) &&
+        Array.isArray(scene.translation)
+    );
+}
+
+// 与 GPT 交互生成新场景
+async function generateScene() {
     const titleInput = document.getElementById("newSceneTitle").value.trim();
     const descriptionInput = document.getElementById("newSceneDescription").value.trim();
 
@@ -83,21 +95,103 @@ function generateScene() {
         return;
     }
 
-    const newScene = {
-        id: scenes.length + 1,
-        title: titleInput,
-        description: descriptionInput,
-        dialog: [
-            { speaker: "A", text: "你好，这是一段生成的对话。", romaji: "Konnichiwa, kore wa seisei sareta kaiwa desu." },
-            { speaker: "B", text: "是的，这是第二句对话。", romaji: "Hai, kore wa dainikaiwa desu." }
-        ],
-        translation: [
-            "A: 你好，这是一段生成的对话。",
-            "B: 是的，这是第二句对话。"
-        ]
-    };
+    // 构造 GPT 的 prompt
+    const userMessage = `请根据以下信息生成一个日语对话，返回的 JSON 格式应符合以下结构：
+{
+    "id": 1,
+    "title": "场景标题",
+    "description": "场景描述",
+    "dialog": [
+        { "speaker": "A", "text": "对话文本1", "romaji": "罗马音1" },
+        { "speaker": "B", "text": "对话文本2", "romaji": "罗马音2" }
+    ],
+    "translation": [
+        "A: 中文翻译1",
+        "B: 中文翻译2"
+    ]
+}
+对话最多 5 句。
+标题: ${titleInput}
+描述: ${descriptionInput}`;
 
-    displayScene(newScene);
+    // 创建 GPT 请求的消息
+    const messages = [
+        { "role": "system", "content": "你是一个生成日语学习对话的助手。" },
+        { "role": "user", "content": userMessage }
+    ];
+
+    try {
+//        console.log("Sending request to GPT with the following message:");
+//        console.log(messages);
+
+        const response = await fetch('https://gpt4-111-us.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'api-key': '84fba46b577b46f58832ef36527e41d4' // 替换为您的实际 API 密钥
+            },
+            body: JSON.stringify({
+                messages: messages,
+                max_tokens: 1000,
+                temperature: 0.7
+            })
+        });
+
+        if (!response.ok) {
+            console.error("Error fetching data from GPT:", response.status, response.statusText);
+            throw new Error('Error fetching data from OpenAI');
+        }
+
+        const data = await response.json();
+
+//        console.log("Response received from GPT:");
+//        console.log(data);
+
+        // 解析 GPT 返回的内容
+        const rawContent = data.choices[0].message.content;
+//        console.log("Raw content from GPT:", rawContent);
+
+        let generatedScene;
+        try {
+            // 清理返回的字符串内容，去除多余的字符
+            const cleanedContent = rawContent
+                .trim() // 去除首尾空格
+                .replace(/^[\s\n]*|[\s\n]*$/g, ""); // 清理多余换行
+
+//            console.log("Cleaned content:", cleanedContent);
+
+            // 尝试解析 JSON
+            generatedScene = JSON.parse(cleanedContent);
+
+            // 验证格式是否符合要求
+            if (!validateSceneFormat(generatedScene)) {
+                console.error("Invalid scene format received from GPT:", generatedScene);
+                alert("生成的场景格式不正确！");
+                return;
+            }
+
+            // 显示生成的场景
+            displayScene(generatedScene);
+        } catch (error) {
+            console.error("Error parsing or validating the scene:", error);
+            alert("生成场景失败，返回的数据格式不正确！");
+        }
+    } catch (error) {
+        console.error("生成场景失败：", error);
+        alert("生成场景失败，请检查网络或 API 配置。");
+    }
+}
+
+// 验证场景格式的函数
+function validateSceneFormat(scene) {
+    return (
+        scene &&
+        typeof scene.title === "string" &&
+        typeof scene.description === "string" &&
+        Array.isArray(scene.dialog) &&
+        scene.dialog.every(d => d.speaker && d.text && d.romaji) &&
+        Array.isArray(scene.translation)
+    );
 }
 
 // 添加新场景到 JSON 数据中
