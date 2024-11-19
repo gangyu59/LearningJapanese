@@ -95,6 +95,12 @@ async function generateScene() {
         return;
     }
 
+    // 显示加载提示
+    const hourglass = document.getElementById('hourglass');
+    const generateSceneBtn = document.getElementById('generateSceneBtn');
+    hourglass.style.display = 'block';
+    generateSceneBtn.disabled = true;
+
     // 构造 GPT 的 prompt
     const userMessage = `请根据以下信息生成一个日语对话，返回的 JSON 格式应符合以下结构：
 {
@@ -110,20 +116,16 @@ async function generateScene() {
         "B: 中文翻译2"
     ]
 }
-对话最多 5 句。
+对话最多 6 句。
 标题: ${titleInput}
 描述: ${descriptionInput}`;
 
-    // 创建 GPT 请求的消息
     const messages = [
         { "role": "system", "content": "你是一个生成日语学习对话的助手。" },
         { "role": "user", "content": userMessage }
     ];
 
     try {
-//        console.log("Sending request to GPT with the following message:");
-//        console.log(messages);
-
         const response = await fetch('https://gpt4-111-us.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01', {
             method: 'POST',
             headers: {
@@ -143,22 +145,14 @@ async function generateScene() {
         }
 
         const data = await response.json();
-
-//        console.log("Response received from GPT:");
-//        console.log(data);
-
-        // 解析 GPT 返回的内容
         const rawContent = data.choices[0].message.content;
-//        console.log("Raw content from GPT:", rawContent);
 
         let generatedScene;
         try {
-            // 清理返回的字符串内容，去除多余的字符
+            // 清理返回的字符串内容
             const cleanedContent = rawContent
                 .trim() // 去除首尾空格
                 .replace(/^[\s\n]*|[\s\n]*$/g, ""); // 清理多余换行
-
-//            console.log("Cleaned content:", cleanedContent);
 
             // 尝试解析 JSON
             generatedScene = JSON.parse(cleanedContent);
@@ -179,6 +173,10 @@ async function generateScene() {
     } catch (error) {
         console.error("生成场景失败：", error);
         alert("生成场景失败，请检查网络或 API 配置。");
+    } finally {
+        // 隐藏加载提示并启用按钮
+        hourglass.style.display = 'none';
+        generateSceneBtn.disabled = false;
     }
 }
 
@@ -248,8 +246,8 @@ async function init() {
 
 // 事件绑定
 document.getElementById("generateSceneBtn").addEventListener("click", generateScene);
-document.getElementById("addSceneBtn").addEventListener("click", addScene);
-document.getElementById("deleteSceneBtn").addEventListener("click", deleteScene);
+//document.getElementById("addSceneBtn").addEventListener("click", addScene);
+//document.getElementById("deleteSceneBtn").addEventListener("click", deleteScene);
 
 // 确保触摸事件不被阻止
 document.addEventListener("DOMContentLoaded", () => {
