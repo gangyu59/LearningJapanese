@@ -322,7 +322,7 @@
     },
     {
         "id": 14,
-        "title": "天气聊天",
+        "title": "聊天气",
         "description": "日常的天气对话。",
         "dialog": [
             {
@@ -454,7 +454,7 @@
     },
     {
         "id": 20,
-        "title": "问候与寒暄",
+        "title": "日常问候",
         "description": "日常的问候和寒暄。",
         "dialog": [
             {
@@ -670,7 +670,7 @@
     },
     {
         "id": 30,
-        "title": "选交通工具",
+        "title": "选交通",
         "description": "询问去某地的交通方式。",
         "dialog": [
             {
@@ -733,7 +733,7 @@
     },
     {
         "id": 33,
-        "title": "购买地铁卡",
+        "title": "买地铁卡",
         "description": "购买地铁乘车卡。",
         "dialog": [
             {
@@ -754,7 +754,7 @@
     },
     {
         "id": 34,
-        "title": "问会场位置",
+        "title": "问位置",
         "description": "询问活动会场的位置。",
         "dialog": [
             {
