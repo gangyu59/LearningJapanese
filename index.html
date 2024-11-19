@@ -12,14 +12,16 @@
         <div class="input-group">
 				    <input type="text" id="newSceneTitle" placeholder="新场景标题">
 				    <input type="text" id="newSceneDescription" placeholder="输入新场景描述">
-				    <button id="generateSceneBtn">生成</button>
-				    <button id="addSceneBtn">添加</button>
+				    <button id="generateSceneBtn">生成对话</button>
+						<!-- 
+						<button id="addSceneBtn">添加</button>
 				    <button id="deleteSceneBtn">删除</button>
+						 -->
 				</div>
     </header>
     <main>
         <aside id="sceneListContainer">
-            <h3>场景</h3>
+            <h3>常用场景</h3>
             <ul id="sceneList"></ul>
         </aside>
         <section id="sceneDetails">
@@ -27,6 +29,7 @@
             <p id="sceneDescription">场景描述</p>
             <div id="sceneDialog"></div>
             <div id="sceneTranslation"></div>
+						<div id="hourglass" style="display: none; font-size: 50px;">⏳</div>
         </section>
     </main>
     <script src="static/js/utils.js"></script>
