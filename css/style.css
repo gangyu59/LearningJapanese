@@ -43,12 +43,12 @@ header h1 {
 }
 
 #newSceneTitle {
-    width: 120px; /* 新场景标题输入框宽度减小一半 */
+    width: 90px; /* 新场景标题输入框宽度减小一半 */
     max-width: 100%;
 }
 
 #newSceneDescription {
-    width: 260px; /* 新场景描述输入框占用更多空间 */
+    width: 290px; /* 新场景描述输入框占用更多空间 */
     max-width: 100%;
 }
 
@@ -208,4 +208,14 @@ button:hover {
 
 .play-audio:hover {
     background-color: #0056b3;
+}
+
+#hourglass {
+    display: none;
+    font-size: 100px; /* 放大五倍 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* 确保在最上层 */
 }
