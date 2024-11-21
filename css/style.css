@@ -83,6 +83,7 @@ main {
     overflow-y: auto; /* 左侧清单独立滚动 */
     border-right: 1px solid #ddd;
     height: 100%; /* 确保占满父容器高度 */
+    max-height: calc(100vh - 120px); /* 限制最大高度，减去其他区域的高度 */
     box-sizing: border-box;
     -webkit-overflow-scrolling: touch; /* 启用平滑滚动（移动设备） */
     padding: 0; /* 去除多余内边距 */
@@ -157,6 +158,7 @@ main {
 
 /* 翻译部分 */
 #sceneTranslation {
+		display: none; /* 隐藏翻译部分 */
     margin-top: 10px;
     padding: 10px;
     background-color: #fff;
