@@ -27,13 +27,58 @@ function highlightSelectedScene(selectedLi) {
 }
 
 // 朗读文本的功能
-function playAudio(text, gender) {
-    const utterance = new SpeechSynthesisUtterance(text);
+// 打印设备支持的语音列表
+function logAvailableVoices() {
     const voices = window.speechSynthesis.getVoices();
-    const voice = voices.find(v => {
-        return v.lang === "ja-JP" && (gender === "male" ? v.name.includes("Google 日本語") : v.name.includes("女性"));
+    if (voices.length === 0) {
+        console.warn("未找到可用的语音。");
+        return;
+    }
+
+    const formattedVoices = voices.map((voice, index) => {
+        return {
+            index: index,
+            name: voice.name,
+            lang: voice.lang,
+            default: voice.default,
+            gender: voice.name.toLowerCase().includes("male") ? "male" : "female"
+        };
     });
-    if (voice) utterance.voice = voice;
+
+ //   console.log("Available voices:", formattedVoices);
+}
+
+// 朗读文本的功能
+function playAudio(text, gender) {
+    // 打印语音列表（仅供调试用）
+    logAvailableVoices();
+
+    const utterance = new SpeechSynthesisUtterance(text);
+
+    // 确保语音列表已加载
+    const voices = window.speechSynthesis.getVoices();
+    if (voices.length === 0) {
+        console.warn("未找到可用的语音。");
+        utterance.lang = "ja-JP";
+        window.speechSynthesis.speak(utterance);
+        return;
+    }
+
+    // 查找对应性别和语言的语音
+    const voice = voices.find(v => {
+        return (
+            v.lang === "ja-JP" &&
+            ((gender === "male" && v.name.toLowerCase().includes("male")) ||
+             (gender === "female" && v.name.toLowerCase().includes("female")))
+        );
+    });
+
+    if (voice) {
+        utterance.voice = voice;
+    } else {
+//        console.warn(`未找到匹配的日语语音: 性别=${gender}`);
+    }
+
     utterance.lang = "ja-JP";
     window.speechSynthesis.speak(utterance);
 }
@@ -48,7 +93,9 @@ function displayScene(scene) {
         .map(
             (d, index) => `
         <div class="dialog-entry">
-            <p><strong>${d.speaker}:</strong> ${d.text} <br> <em>${d.romaji}</em></p>
+            <p><strong>${d.speaker}:</strong> ${d.text} <br> 
+            <em>${d.romaji}</em> <br>
+            <span>${scene.translation[index]}</span></p>
             <button class="play-audio" data-index="${index}" data-gender="${d.speaker === 'A' ? 'male' : 'female'}">
                 🔊 朗读
             </button>
@@ -57,11 +104,11 @@ function displayScene(scene) {
         )
         .join("");
 
+    // 移除翻译框
     const translationDiv = document.getElementById("sceneTranslation");
-    translationDiv.innerHTML = `
-        <h3>中文翻译</h3>
-        ${scene.translation.map(t => `<p>${t}</p>`).join("")}
-    `;
+    if (translationDiv) {
+        translationDiv.style.display = "none"; // 隐藏翻译框
+    }
 
     document.querySelectorAll(".play-audio").forEach(button => {
         button.addEventListener("click", event => {
@@ -72,6 +119,11 @@ function displayScene(scene) {
         });
     });
 }
+
+// 确保语音列表加载完成后执行
+window.speechSynthesis.onvoiceschanged = () => {
+//    console.log("语音列表已加载。");
+};
 
 // 验证场景格式
 function validateSceneFormat(scene) {
@@ -87,11 +139,10 @@ function validateSceneFormat(scene) {
 
 // 与 GPT 交互生成新场景
 async function generateScene() {
-    const titleInput = document.getElementById("newSceneTitle").value.trim();
     const descriptionInput = document.getElementById("newSceneDescription").value.trim();
 
-    if (!titleInput || !descriptionInput) {
-        alert("请输入新场景标题和描述！");
+    if (!descriptionInput) {
+        alert("请输入新场景描述！");
         return;
     }
 
@@ -102,7 +153,7 @@ async function generateScene() {
     generateSceneBtn.disabled = true;
 
     // 构造 GPT 的 prompt
-    const userMessage = `请根据以下信息生成一个日语对话，返回的 JSON 格式应符合以下结构：
+    const userMessage = `请根据以下描述生成一个日语对话，并为该场景生成一个最多不超过四个字的标题。返回的 JSON 格式应符合以下结构：
 {
     "id": 1,
     "title": "场景标题",
@@ -117,7 +168,6 @@ async function generateScene() {
     ]
 }
 对话最多 6 句。
-标题: ${titleInput}
 描述: ${descriptionInput}`;
 
     const messages = [
@@ -150,9 +200,7 @@ async function generateScene() {
         let generatedScene;
         try {
             // 清理返回的字符串内容
-            const cleanedContent = rawContent
-                .trim() // 去除首尾空格
-                .replace(/^[\s\n]*|[\s\n]*$/g, ""); // 清理多余换行
+            const cleanedContent = rawContent.trim();
 
             // 尝试解析 JSON
             generatedScene = JSON.parse(cleanedContent);
@@ -178,18 +226,6 @@ async function generateScene() {
         hourglass.style.display = 'none';
         generateSceneBtn.disabled = false;
     }
-}
-
-// 验证场景格式的函数
-function validateSceneFormat(scene) {
-    return (
-        scene &&
-        typeof scene.title === "string" &&
-        typeof scene.description === "string" &&
-        Array.isArray(scene.dialog) &&
-        scene.dialog.every(d => d.speaker && d.text && d.romaji) &&
-        Array.isArray(scene.translation)
-    );
 }
 
 // 添加新场景到 JSON 数据中
