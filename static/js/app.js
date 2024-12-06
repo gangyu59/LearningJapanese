@@ -27,61 +27,56 @@ function highlightSelectedScene(selectedLi) {
 }
 
 // 朗读文本的功能
-// 打印设备支持的语音列表
 function logAvailableVoices() {
     const voices = window.speechSynthesis.getVoices();
     if (voices.length === 0) {
-        console.warn("未找到可用的语音。");
+        console.warn("No voices available.");
         return;
     }
 
-    const formattedVoices = voices.map((voice, index) => {
-        return {
-            index: index,
-            name: voice.name,
-            lang: voice.lang,
-            default: voice.default,
-            gender: voice.name.toLowerCase().includes("male") ? "male" : "female"
-        };
-    });
-
- //   console.log("Available voices:", formattedVoices);
+//    console.log("Available voices:", voices.map(v => ({
+//        name: v.name,
+//        lang: v.lang,
+//        default: v.default,
+//    })));
 }
 
-// 朗读文本的功能
 function playAudio(text, gender) {
-    // 打印语音列表（仅供调试用）
-    logAvailableVoices();
+    logAvailableVoices(); // 打印所有可用语音（调试用）
 
     const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "ja-JP"; // 强制指定为日语
 
-    // 确保语音列表已加载
     const voices = window.speechSynthesis.getVoices();
-    if (voices.length === 0) {
-        console.warn("未找到可用的语音。");
-        utterance.lang = "ja-JP";
-        window.speechSynthesis.speak(utterance);
-        return;
-    }
 
-    // 查找对应性别和语言的语音
-    const voice = voices.find(v => {
-        return (
-            v.lang === "ja-JP" &&
-            ((gender === "male" && v.name.toLowerCase().includes("male")) ||
-             (gender === "female" && v.name.toLowerCase().includes("female")))
-        );
-    });
-
-    if (voice) {
-        utterance.voice = voice;
+    // 确保语音列表加载完成
+    if (voices.length > 0) {
+        // 优先选择日语 Kyoko 声音
+        const voice = voices.find(v => v.name === "Kyoko" && v.lang === "ja-JP");
+        if (voice) {
+            utterance.voice = voice;
+        } else {
+            console.warn("Kyoko not found. Trying other Japanese voices.");
+            // 如果没有找到 Kyoko，尝试选择其他日语语音
+            const fallbackVoice = voices.find(v => v.lang === "ja-JP");
+            if (fallbackVoice) {
+                utterance.voice = fallbackVoice;
+            } else {
+                console.warn("No Japanese voice found. Falling back to default.");
+            }
+        }
     } else {
-//        console.warn(`未找到匹配的日语语音: 性别=${gender}`);
+        console.error("Voice list is empty. Ensure voices are loaded.");
     }
 
-    utterance.lang = "ja-JP";
     window.speechSynthesis.speak(utterance);
 }
+
+// 确保语音列表加载完成后执行
+window.speechSynthesis.onvoiceschanged = () => {
+    console.log("Voices updated.");
+    logAvailableVoices();
+};
 
 // 显示选中的场景
 function displayScene(scene) {
@@ -153,7 +148,7 @@ async function generateScene() {
     generateSceneBtn.disabled = true;
 
     // 构造 GPT 的 prompt
-    const userMessage = `请根据以下描述生成一个日语对话，并为该场景生成一个最多不超过四个字的标题。返回的 JSON 格式应符合以下结构：
+    const userMessage = `请根据以下描述生成一个日语对话，并为该场景生成一个最多不超过四个字的中文标题。返回的 JSON 格式应符合以下结构：
 {
     "id": 1,
     "title": "场景标题",
