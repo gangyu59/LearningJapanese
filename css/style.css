@@ -94,7 +94,7 @@ main {
     position: sticky; /* 固定标题 */
     top: 0;
     z-index: 10; /* 确保标题在最上层 */
-    background-color: #f4f4f4;
+    background-color: #90ee90;
     margin: 0;
     padding: 10px;
     border-bottom: 1px solid #ddd;
