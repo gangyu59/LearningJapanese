@@ -21,20 +21,42 @@
 						 -->
 				</div>
     </header>
-    <main>
-        <aside id="sceneListContainer">
-            <h3>常用场景</h3>
-            <ul id="sceneList"></ul>
-        </aside>
-        <section id="sceneDetails">
-            <h3 id="sceneTitle">对话</h3>
-            <p id="sceneDescription">场景描述</p>
-            <div id="sceneDialog"></div>
-            <div id="sceneTranslation"></div>
-						<div id="hourglass" style="display: none; font-size: 50px;">⏳</div>
-        </section>
-    </main>
+<!-- Toggle 切换栏（放在 main 之外） 
+<div id="toggleBar">
+  <h3 id="ToggleTitle">常用场景</h3>
+</div>
+-->
+
+<main>
+  <!-- 左侧清单区域（场景或词汇列表） -->
+  <aside id="sceneListContainer">
+		<h3 id="ToggleTitle">常用场景</h3>
+    <ul id="sceneList"></ul>
+  </aside>
+  <aside id="wordListContainer" style="display: none;">
+		<h3 id="ToggleWordTitle">常用词汇</h3>
+    <ul id="wordList"></ul>
+  </aside>
+
+  <!-- 右侧详情区域（场景或词汇内容） -->
+  <section id="sceneDetails">
+    <h3 id="sceneTitle">对话</h3>
+    <p id="sceneDescription">场景描述</p>
+    <div id="sceneDialog"></div>
+    <div id="sceneTranslation"></div>
+    <div id="hourglass" style="display: none; font-size: 50px;">⏳</div>
+  </section>
+
+  <section id="wordDetails" style="display: none;">
+    <h3 id="wordTitle">词类</h3>
+    <p id="wordDescription">词汇描述</p>
+    <div id="wordDialog"></div>
+    <div id="wordTranslation"></div>
+    <div id="hourglass" style="display: none; font-size: 50px;">⏳</div>
+  </section>
+</main>
+		
     <script src="static/js/utils.js"></script>
-    <script src="static/js/app.js"></script>
+		<script src="static/js/app.js"></script>
 </body>
 </html>
