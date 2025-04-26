@@ -1,7 +1,58 @@
+//js/app.js
+
+let isSceneMode = true;
+let words = [];
+let scenes = [];
+let selectedSceneId = null; 
+
 const sceneList = document.getElementById("sceneList");
 const sceneDetails = document.getElementById("sceneDetails");
-let scenes = [];
-let selectedSceneId = null; // 用于存储当前选中的场景 ID
+
+const wordList = document.getElementById("wordList");
+const wordDetails = document.getElementById("wordDetails");
+
+
+document.getElementById("ToggleTitle").addEventListener("click", () => {
+  isSceneMode = !isSceneMode;
+  toggleMode(isSceneMode);
+});
+
+document.getElementById("ToggleWordTitle").addEventListener("click", () => {
+  isSceneMode = true; // 切换回场景模式
+  toggleMode(isSceneMode);
+});
+
+// utils.js
+
+window.toggleMode = function(isSceneMode) {
+  const toggleTitle = document.getElementById("ToggleTitle");
+  const sceneElements = ["sceneDialog", "sceneTranslation", "sceneTitle", "sceneDescription", "sceneListContainer", "sceneDetails"];
+  const wordElements = ["wordDialog", "wordTranslation", "wordTitle", "wordDescription", "wordListContainer", "wordDetails"];
+
+  if (isSceneMode) {
+    toggleTitle.textContent = "常用场景";
+    if (typeof renderSceneList === "function") renderSceneList();
+    sceneElements.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = "block";
+    });
+    wordElements.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = "none";
+    });
+  } else {
+    toggleTitle.textContent = "常用词汇";
+    if (typeof renderWordList === "function") renderWordList();
+    wordElements.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = "block";
+    });
+    sceneElements.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = "none";
+    });
+  }
+};
 
 // 渲染场景清单
 function renderSceneList() {
@@ -23,6 +74,29 @@ function renderSceneList() {
 // 高亮选中的场景标题
 function highlightSelectedScene(selectedLi) {
     document.querySelectorAll("#sceneList li").forEach(li => li.classList.remove("selected"));
+    selectedLi.classList.add("selected");
+}
+
+// 渲染场景清单
+function renderWordList() {
+    wordList.innerHTML = "";
+    words.forEach(word => {
+        const li = document.createElement("li");
+        li.textContent = word.title;
+        li.dataset.id = word.id;
+        li.classList.remove("selected");
+        li.addEventListener("click", () => {
+            selectedWordId = word.id;
+            highlightSelectedWord(li);
+            displayWord(word);
+        });
+        wordList.appendChild(li);
+    });
+}
+
+// 高亮选中的场景标题
+function highlightSelectedWord(selectedLi) {
+    document.querySelectorAll("#wordList li").forEach(li => li.classList.remove("selected"));
     selectedLi.classList.add("selected");
 }
 
@@ -110,6 +184,43 @@ function displayScene(scene) {
             const index = event.target.getAttribute("data-index");
             const gender = event.target.getAttribute("data-gender");
             const text = scene.dialog[index].text;
+            playAudio(text, gender);
+        });
+    });
+}
+
+// 显示选中的场景
+function displayWord(word) {
+    document.getElementById("wordTitle").textContent = word.title;
+    document.getElementById("wordDescription").textContent = word.description;
+
+    const dialogDiv = document.getElementById("wordDialog");
+    dialogDiv.innerHTML = word.dialog
+        .map(
+            (d, index) => `
+        <div class="dialog-entry">
+            <p><strong>${d.speaker}:</strong> ${d.text} <br> 
+            <em>${d.romaji}</em> <br>
+            <span>${word.translation[index]}</span></p>
+            <button class="play-audio" data-index="${index}" data-gender="${d.speaker === 'A' ? 'male' : 'female'}">
+                🔊 朗读
+            </button>
+        </div>
+        `
+        )
+        .join("");
+
+    // 移除翻译框
+    const translationDiv = document.getElementById("wordTranslation");
+    if (translationDiv) {
+        translationDiv.style.display = "none"; // 隐藏翻译框
+    }
+
+    document.querySelectorAll(".play-audio").forEach(button => {
+        button.addEventListener("click", event => {
+            const index = event.target.getAttribute("data-index");
+            const gender = event.target.getAttribute("data-gender");
+            const text = word.dialog[index].text;
             playAudio(text, gender);
         });
     });
@@ -272,6 +383,8 @@ function deleteScene() {
 // 初始化应用
 async function init() {
     scenes = await loadJSON("data/scenes.json");
+    words = await loadJSON("data/words.json"); 
+		
     renderSceneList();
 }
 
