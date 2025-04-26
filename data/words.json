@@ -1,0 +1,2819 @@
+[
+  {
+    "id": 1,
+    "title": "名词",
+    "description": "定义人和物的词",
+  "dialog": [
+    {
+      "speaker": "A",
+      "text": "図書館",
+      "romaji": "Toshokan"
+    },
+    {
+      "speaker": "A",
+      "text": "携帯電話",
+      "romaji": "Keitai denwa"
+    },
+    {
+      "speaker": "A",
+      "text": "電車の切符",
+      "romaji": "Densha no kippu"
+    },
+    {
+      "speaker": "A",
+      "text": "病院",
+      "romaji": "Byouin"
+    },
+    {
+      "speaker": "A",
+      "text": "学校",
+      "romaji": "Gakkou"
+    },
+    {
+      "speaker": "A",
+      "text": "先生",
+      "romaji": "Sensei"
+    },
+    {
+      "speaker": "A",
+      "text": "学生",
+      "romaji": "Gakusei"
+    },
+    {
+      "speaker": "A",
+      "text": "日本語",
+      "romaji": "Nihongo"
+    },
+    {
+      "speaker": "A",
+      "text": "英語",
+      "romaji": "Eigo"
+    },
+    {
+      "speaker": "A",
+      "text": "教室",
+      "romaji": "Kyoushitsu"
+    },
+    {
+      "speaker": "A",
+      "text": "椅子",
+      "romaji": "Isu"
+    },
+    {
+      "speaker": "A",
+      "text": "机",
+      "romaji": "Tsukue"
+    },
+    {
+      "speaker": "A",
+      "text": "本",
+      "romaji": "Hon"
+    },
+    {
+      "speaker": "A",
+      "text": "新聞",
+      "romaji": "Shinbun"
+    },
+    {
+      "speaker": "A",
+      "text": "雑誌",
+      "romaji": "Zasshi"
+    },
+    {
+      "speaker": "A",
+      "text": "時計",
+      "romaji": "Tokei"
+    },
+    {
+      "speaker": "A",
+      "text": "窓",
+      "romaji": "Mado"
+    },
+    {
+      "speaker": "A",
+      "text": "ドア",
+      "romaji": "Doa"
+    },
+    {
+      "speaker": "A",
+      "text": "靴",
+      "romaji": "Kutsu"
+    },
+    {
+      "speaker": "A",
+      "text": "服",
+      "romaji": "Fuku"
+    },
+    {
+      "speaker": "A",
+      "text": "鞄",
+      "romaji": "Kaban"
+    },
+    {
+      "speaker": "A",
+      "text": "財布",
+      "romaji": "Saifu"
+    },
+    {
+      "speaker": "A",
+      "text": "鍵",
+      "romaji": "Kagi"
+    },
+    {
+      "speaker": "A",
+      "text": "電気",
+      "romaji": "Denki"
+    },
+    {
+      "speaker": "A",
+      "text": "冷蔵庫",
+      "romaji": "Reizouko"
+    },
+    {
+      "speaker": "A",
+      "text": "テレビ",
+      "romaji": "Terebi"
+    },
+    {
+      "speaker": "A",
+      "text": "コンピュータ",
+      "romaji": "Konpyu-ta"
+    },
+    {
+      "speaker": "A",
+      "text": "バス",
+      "romaji": "Basu"
+    },
+    {
+      "speaker": "A",
+      "text": "電車",
+      "romaji": "Densha"
+    },
+    {
+      "speaker": "A",
+      "text": "自転車",
+      "romaji": "Jitensha"
+    },
+    {
+      "speaker": "A",
+      "text": "飛行機",
+      "romaji": "Hikouki"
+    },
+    {
+      "speaker": "A",
+      "text": "駅",
+      "romaji": "Eki"
+    },
+    {
+      "speaker": "A",
+      "text": "空港",
+      "romaji": "Kuukou"
+    },
+    {
+      "speaker": "A",
+      "text": "ホテル",
+      "romaji": "Hoteru"
+    },
+    {
+      "speaker": "A",
+      "text": "部屋",
+      "romaji": "Heya"
+    },
+    {
+      "speaker": "A",
+      "text": "ベッド",
+      "romaji": "Beddo"
+    },
+    {
+      "speaker": "A",
+      "text": "トイレ",
+      "romaji": "Toire"
+    },
+    {
+      "speaker": "A",
+      "text": "お風呂",
+      "romaji": "Ofuro"
+    },
+    {
+      "speaker": "A",
+      "text": "水",
+      "romaji": "Mizu"
+    },
+    {
+      "speaker": "A",
+      "text": "お茶",
+      "romaji": "Ocha"
+    },
+    {
+      "speaker": "A",
+      "text": "コーヒー",
+      "romaji": "Ko-hi-"
+    },
+    {
+      "speaker": "A",
+      "text": "牛乳",
+      "romaji": "Gyuunyuu"
+    },
+    {
+      "speaker": "A",
+      "text": "ジュース",
+      "romaji": "Ju-su"
+    },
+    {
+      "speaker": "A",
+      "text": "ご飯",
+      "romaji": "Gohan"
+    },
+    {
+      "speaker": "A",
+      "text": "パン",
+      "romaji": "Pan"
+    },
+    {
+      "speaker": "A",
+      "text": "ラーメン",
+      "romaji": "Ra-men"
+    },
+    {
+      "speaker": "A",
+      "text": "魚",
+      "romaji": "Sakana"
+    },
+    {
+      "speaker": "A",
+      "text": "肉",
+      "romaji": "Niku"
+    },
+    {
+      "speaker": "A",
+      "text": "野菜",
+      "romaji": "Yasai"
+    },
+    {
+      "speaker": "A",
+      "text": "果物",
+      "romaji": "Kudamono"
+    },
+    {
+      "speaker": "A",
+      "text": "りんご",
+      "romaji": "Ringo"
+    },
+    {
+      "speaker": "A",
+      "text": "みかん",
+      "romaji": "Mikan"
+    },
+    {
+      "speaker": "A",
+      "text": "バナナ",
+      "romaji": "Banana"
+    },
+    {
+      "speaker": "A",
+      "text": "友達",
+      "romaji": "Tomodachi"
+    },
+    {
+      "speaker": "A",
+      "text": "家族",
+      "romaji": "Kazoku"
+    },
+    {
+      "speaker": "A",
+      "text": "母",
+      "romaji": "Haha"
+    },
+    {
+      "speaker": "A",
+      "text": "父",
+      "romaji": "Chichi"
+    },
+    {
+      "speaker": "A",
+      "text": "兄",
+      "romaji": "Ani"
+    },
+    {
+      "speaker": "A",
+      "text": "姉",
+      "romaji": "Ane"
+    },
+    {
+      "speaker": "A",
+      "text": "弟",
+      "romaji": "Otouto"
+    },
+    {
+      "speaker": "A",
+      "text": "妹",
+      "romaji": "Imouto"
+    },
+    {
+      "speaker": "A",
+      "text": "子供",
+      "romaji": "Kodomo"
+    },
+    {
+      "speaker": "A",
+      "text": "赤ちゃん",
+      "romaji": "Akachan"
+    },
+    {
+      "speaker": "A",
+      "text": "先生",
+      "romaji": "Sensei"
+    },
+    {
+      "speaker": "A",
+      "text": "会社",
+      "romaji": "Kaisha"
+    },
+    {
+      "speaker": "A",
+      "text": "仕事",
+      "romaji": "Shigoto"
+    },
+    {
+      "speaker": "A",
+      "text": "会議",
+      "romaji": "Kaigi"
+    },
+    {
+      "speaker": "A",
+      "text": "電話",
+      "romaji": "Denwa"
+    },
+    {
+      "speaker": "A",
+      "text": "メール",
+      "romaji": "Me-ru"
+    },
+    {
+      "speaker": "A",
+      "text": "パソコン",
+      "romaji": "Pasokon"
+    },
+    {
+      "speaker": "A",
+      "text": "カメラ",
+      "romaji": "Kamera"
+    },
+    {
+      "speaker": "A",
+      "text": "写真",
+      "romaji": "Shashin"
+    },
+    {
+      "speaker": "A",
+      "text": "映画",
+      "romaji": "Eiga"
+    },
+    {
+      "speaker": "A",
+      "text": "音楽",
+      "romaji": "Ongaku"
+    },
+    {
+      "speaker": "A",
+      "text": "歌",
+      "romaji": "Uta"
+    },
+    {
+      "speaker": "A",
+      "text": "漫画",
+      "romaji": "Manga"
+    },
+    {
+      "speaker": "A",
+      "text": "ゲーム",
+      "romaji": "Ge-mu"
+    },
+    {
+      "speaker": "A",
+      "text": "スポーツ",
+      "romaji": "Supo-tsu"
+    },
+    {
+      "speaker": "A",
+      "text": "サッカー",
+      "romaji": "Sakka-"
+    },
+    {
+      "speaker": "A",
+      "text": "野球",
+      "romaji": "Yakyuu"
+    },
+    {
+      "speaker": "A",
+      "text": "テニス",
+      "romaji": "Tenisu"
+    },
+    {
+      "speaker": "A",
+      "text": "山",
+      "romaji": "Yama"
+    },
+    {
+      "speaker": "A",
+      "text": "川",
+      "romaji": "Kawa"
+    },
+    {
+      "speaker": "A",
+      "text": "海",
+      "romaji": "Umi"
+    },
+    {
+      "speaker": "A",
+      "text": "公園",
+      "romaji": "Kouen"
+    },
+    {
+      "speaker": "A",
+      "text": "動物",
+      "romaji": "Doubutsu"
+    },
+    {
+      "speaker": "A",
+      "text": "犬",
+      "romaji": "Inu"
+    },
+    {
+      "speaker": "A",
+      "text": "猫",
+      "romaji": "Neko"
+    },
+    {
+      "speaker": "A",
+      "text": "鳥",
+      "romaji": "Tori"
+    },
+    {
+      "speaker": "A",
+      "text": "花",
+      "romaji": "Hana"
+    },
+    {
+      "speaker": "A",
+      "text": "木",
+      "romaji": "Ki"
+    },
+    {
+      "speaker": "A",
+      "text": "空",
+      "romaji": "Sora"
+    },
+    {
+      "speaker": "A",
+      "text": "星",
+      "romaji": "Hoshi"
+    },
+    {
+      "speaker": "A",
+      "text": "月",
+      "romaji": "Tsuki"
+    },
+    {
+      "speaker": "A",
+      "text": "太陽",
+      "romaji": "Taiyou"
+    },
+    {
+      "speaker": "A",
+      "text": "天気",
+      "romaji": "Tenki"
+    },
+    {
+      "speaker": "A",
+      "text": "風",
+      "romaji": "Kaze"
+    },
+    {
+      "speaker": "A",
+      "text": "雨",
+      "romaji": "Ame"
+    },
+    {
+      "speaker": "A",
+      "text": "雪",
+      "romaji": "Yuki"
+    }
+  ],
+  "translation": [
+    "图书馆",
+    "手机",
+    "电车票 / 火车票",
+    "医院",
+    "学校",
+    "老师",
+    "学生",
+    "日语",
+    "英语",
+    "教室",
+    "椅子",
+    "桌子",
+    "书",
+    "报纸",
+    "杂志",
+    "钟 / 表",
+    "窗户",
+    "门",
+    "鞋子",
+    "衣服",
+    "包",
+    "钱包",
+    "钥匙",
+    "电",
+    "冰箱",
+    "电视",
+    "电脑",
+    "公交车",
+    "电车",
+    "自行车",
+    "飞机",
+    "车站",
+    "机场",
+    "酒店",
+    "房间",
+    "床",
+    "厕所",
+    "浴室",
+    "水",
+    "茶",
+    "咖啡",
+    "牛奶",
+    "果汁",
+    "米饭",
+    "面包",
+    "拉面",
+    "鱼",
+    "肉",
+    "蔬菜",
+    "水果",
+    "苹果",
+    "橘子",
+    "香蕉",
+    "朋友",
+    "家人",
+    "母亲",
+    "父亲",
+    "哥哥",
+    "姐姐",
+    "弟弟",
+    "妹妹",
+    "孩子",
+    "婴儿",
+    "老师",
+    "公司",
+    "工作",
+    "会议",
+    "电话",
+    "邮件",
+    "个人电脑",
+    "相机",
+    "照片",
+    "电影",
+    "音乐",
+    "歌曲",
+    "漫画",
+    "游戏",
+    "运动",
+    "足球",
+    "棒球",
+    "网球",
+    "山",
+    "河",
+    "海",
+    "公园",
+    "动物",
+    "狗",
+    "猫",
+    "鸟",
+    "花",
+    "树",
+    "天空",
+    "星星",
+    "月亮",
+    "太阳",
+    "天气",
+    "风",
+    "雨",
+    "雪"
+  ]
+  },
+  {
+    "id": 2,
+    "title": "动词",
+    "description": "表示动作和行为的词",
+     "dialog": [
+    {
+      "speaker": "A",
+      "text": "食べる",
+      "romaji": "Taberu"
+    },
+    {
+      "speaker": "A",
+      "text": "飲む",
+      "romaji": "Nomu"
+    },
+    {
+      "speaker": "A",
+      "text": "見る",
+      "romaji": "Miru"
+    },
+    {
+      "speaker": "A",
+      "text": "聞く",
+      "romaji": "Kiku"
+    },
+    {
+      "speaker": "A",
+      "text": "話す",
+      "romaji": "Hanasu"
+    },
+    {
+      "speaker": "A",
+      "text": "読む",
+      "romaji": "Yomu"
+    },
+    {
+      "speaker": "A",
+      "text": "書く",
+      "romaji": "Kaku"
+    },
+    {
+      "speaker": "A",
+      "text": "買う",
+      "romaji": "Kau"
+    },
+    {
+      "speaker": "A",
+      "text": "売る",
+      "romaji": "Uru"
+    },
+    {
+      "speaker": "A",
+      "text": "行く",
+      "romaji": "Iku"
+    },
+    {
+      "speaker": "A",
+      "text": "来る",
+      "romaji": "Kuru"
+    },
+    {
+      "speaker": "A",
+      "text": "帰る",
+      "romaji": "Kaeru"
+    },
+    {
+      "speaker": "A",
+      "text": "歩く",
+      "romaji": "Aruku"
+    },
+    {
+      "speaker": "A",
+      "text": "走る",
+      "romaji": "Hashiru"
+    },
+    {
+      "speaker": "A",
+      "text": "座る",
+      "romaji": "Suwaru"
+    },
+    {
+      "speaker": "A",
+      "text": "立つ",
+      "romaji": "Tatsu"
+    },
+    {
+      "speaker": "A",
+      "text": "寝る",
+      "romaji": "Neru"
+    },
+    {
+      "speaker": "A",
+      "text": "起きる",
+      "romaji": "Okiru"
+    },
+    {
+      "speaker": "A",
+      "text": "働く",
+      "romaji": "Hataraku"
+    },
+    {
+      "speaker": "A",
+      "text": "休む",
+      "romaji": "Yasumu"
+    },
+    {
+      "speaker": "A",
+      "text": "遊ぶ",
+      "romaji": "Asobu"
+    },
+    {
+      "speaker": "A",
+      "text": "泳ぐ",
+      "romaji": "Oyogu"
+    },
+    {
+      "speaker": "A",
+      "text": "乗る",
+      "romaji": "Noru"
+    },
+    {
+      "speaker": "A",
+      "text": "降りる",
+      "romaji": "Oriru"
+    },
+    {
+      "speaker": "A",
+      "text": "使う",
+      "romaji": "Tsukau"
+    },
+    {
+      "speaker": "A",
+      "text": "作る",
+      "romaji": "Tsukuru"
+    },
+    {
+      "speaker": "A",
+      "text": "切る",
+      "romaji": "Kiru"
+    },
+    {
+      "speaker": "A",
+      "text": "開ける",
+      "romaji": "Akeru"
+    },
+    {
+      "speaker": "A",
+      "text": "閉める",
+      "romaji": "Shimeru"
+    },
+    {
+      "speaker": "A",
+      "text": "入る",
+      "romaji": "Hairu"
+    },
+    {
+      "speaker": "A",
+      "text": "出る",
+      "romaji": "Deru"
+    },
+    {
+      "speaker": "A",
+      "text": "持つ",
+      "romaji": "Motsu"
+    },
+    {
+      "speaker": "A",
+      "text": "待つ",
+      "romaji": "Matsu"
+    },
+    {
+      "speaker": "A",
+      "text": "始める",
+      "romaji": "Hajimeru"
+    },
+    {
+      "speaker": "A",
+      "text": "終わる",
+      "romaji": "Owaru"
+    },
+    {
+      "speaker": "A",
+      "text": "覚える",
+      "romaji": "Oboeru"
+    },
+    {
+      "speaker": "A",
+      "text": "忘れる",
+      "romaji": "Wasureru"
+    },
+    {
+      "speaker": "A",
+      "text": "考える",
+      "romaji": "Kangaeru"
+    },
+    {
+      "speaker": "A",
+      "text": "知る",
+      "romaji": "Shiru"
+    },
+    {
+      "speaker": "A",
+      "text": "探す",
+      "romaji": "Sagasu"
+    },
+    {
+      "speaker": "A",
+      "text": "見つける",
+      "romaji": "Mitsukeru"
+    },
+    {
+      "speaker": "A",
+      "text": "教える",
+      "romaji": "Oshieru"
+    },
+    {
+      "speaker": "A",
+      "text": "習う",
+      "romaji": "Narau"
+    },
+    {
+      "speaker": "A",
+      "text": "練習する",
+      "romaji": "Renshuu suru"
+    },
+    {
+      "speaker": "A",
+      "text": "勉強する",
+      "romaji": "Benkyou suru"
+    },
+    {
+      "speaker": "A",
+      "text": "掃除する",
+      "romaji": "Souji suru"
+    },
+    {
+      "speaker": "A",
+      "text": "洗う",
+      "romaji": "Arau"
+    },
+    {
+      "speaker": "A",
+      "text": "料理する",
+      "romaji": "Ryouri suru"
+    },
+    {
+      "speaker": "A",
+      "text": "旅行する",
+      "romaji": "Ryokou suru"
+    },
+    {
+      "speaker": "A",
+      "text": "結婚する",
+      "romaji": "Kekkon suru"
+    },
+    {
+      "speaker": "A",
+      "text": "離婚する",
+      "romaji": "Rikon suru"
+    },
+    {
+      "speaker": "A",
+      "text": "運転する",
+      "romaji": "Unten suru"
+    },
+    {
+      "speaker": "A",
+      "text": "電話する",
+      "romaji": "Denwa suru"
+    },
+    {
+      "speaker": "A",
+      "text": "買い物する",
+      "romaji": "Kaimono suru"
+    },
+    {
+      "speaker": "A",
+      "text": "散歩する",
+      "romaji": "Sanpo suru"
+    },
+    {
+      "speaker": "A",
+      "text": "約束する",
+      "romaji": "Yakusoku suru"
+    },
+    {
+      "speaker": "A",
+      "text": "予約する",
+      "romaji": "Yoyaku suru"
+    },
+    {
+      "speaker": "A",
+      "text": "紹介する",
+      "romaji": "Shoukai suru"
+    },
+    {
+      "speaker": "A",
+      "text": "説明する",
+      "romaji": "Setsumei suru"
+    },
+    {
+      "speaker": "A",
+      "text": "注意する",
+      "romaji": "Chuui suru"
+    },
+    {
+      "speaker": "A",
+      "text": "運動する",
+      "romaji": "Undou suru"
+    },
+    {
+      "speaker": "A",
+      "text": "参加する",
+      "romaji": "Sanka suru"
+    },
+    {
+      "speaker": "A",
+      "text": "見学する",
+      "romaji": "Kengaku suru"
+    },
+    {
+      "speaker": "A",
+      "text": "出発する",
+      "romaji": "Shuppatsu suru"
+    },
+    {
+      "speaker": "A",
+      "text": "到着する",
+      "romaji": "Touchaku suru"
+    },
+    {
+      "speaker": "A",
+      "text": "卒業する",
+      "romaji": "Sotsugyou suru"
+    },
+    {
+      "speaker": "A",
+      "text": "入学する",
+      "romaji": "Nyūgaku suru"
+    },
+    {
+      "speaker": "A",
+      "text": "引っ越す",
+      "romaji": "Hikkosu"
+    },
+    {
+      "speaker": "A",
+      "text": "緊張する",
+      "romaji": "Kinchou suru"
+    },
+    {
+      "speaker": "A",
+      "text": "安心する",
+      "romaji": "Anshin suru"
+    },
+    {
+      "speaker": "A",
+      "text": "心配する",
+      "romaji": "Shinpai suru"
+    },
+    {
+      "speaker": "A",
+      "text": "疲れる",
+      "romaji": "Tsukareru"
+    },
+    {
+      "speaker": "A",
+      "text": "病気になる",
+      "romaji": "Byouki ni naru"
+    },
+    {
+      "speaker": "A",
+      "text": "死ぬ",
+      "romaji": "Shinu"
+    },
+    {
+      "speaker": "A",
+      "text": "泣く",
+      "romaji": "Naku"
+    },
+    {
+      "speaker": "A",
+      "text": "笑う",
+      "romaji": "Warau"
+    },
+    {
+      "speaker": "A",
+      "text": "怒る",
+      "romaji": "Okoru"
+    },
+    {
+      "speaker": "A",
+      "text": "助ける",
+      "romaji": "Tasukeru"
+    },
+    {
+      "speaker": "A",
+      "text": "叩く",
+      "romaji": "Tataku"
+    },
+    {
+      "speaker": "A",
+      "text": "蹴る",
+      "romaji": "Keru"
+    },
+    {
+      "speaker": "A",
+      "text": "投げる",
+      "romaji": "Nageru"
+    },
+    {
+      "speaker": "A",
+      "text": "拾う",
+      "romaji": "Hirou"
+    },
+    {
+      "speaker": "A",
+      "text": "運ぶ",
+      "romaji": "Hakobu"
+    },
+    {
+      "speaker": "A",
+      "text": "守る",
+      "romaji": "Mamoru"
+    },
+    {
+      "speaker": "A",
+      "text": "攻める",
+      "romaji": "Seme"
+    },
+    {
+      "speaker": "A",
+      "text": "謝る",
+      "romaji": "Ayamaru"
+    },
+    {
+      "speaker": "A",
+      "text": "許す",
+      "romaji": "Yurusu"
+    },
+    {
+      "speaker": "A",
+      "text": "届ける",
+      "romaji": "Todokeru"
+    },
+    {
+      "speaker": "A",
+      "text": "迎える",
+      "romaji": "Mukaeru"
+    },
+    {
+      "speaker": "A",
+      "text": "進む",
+      "romaji": "Susumu"
+    },
+    {
+      "speaker": "A",
+      "text": "戻る",
+      "romaji": "Modoru"
+    },
+    {
+      "speaker": "A",
+      "text": "止まる",
+      "romaji": "Tomaru"
+    },
+    {
+      "speaker": "A",
+      "text": "始まる",
+      "romaji": "Hajimaru"
+    },
+    {
+      "speaker": "A",
+      "text": "降る",
+      "romaji": "Furu"
+    },
+    {
+      "speaker": "A",
+      "text": "乾く",
+      "romaji": "Kawaku"
+    }
+  ],
+  "translation": [
+    "吃",
+    "喝",
+    "看",
+    "听",
+    "说",
+    "读",
+    "写",
+    "买",
+    "卖",
+    "去",
+    "来",
+    "回家",
+    "走路",
+    "跑步",
+    "坐",
+    "站",
+    "睡觉",
+    "起床",
+    "工作",
+    "休息",
+    "玩耍",
+    "游泳",
+    "乘坐",
+    "下（车等）",
+    "使用",
+    "制作",
+    "切",
+    "打开",
+    "关闭",
+    "进入",
+    "出去",
+    "拿",
+    "等待",
+    "开始",
+    "结束",
+    "记住",
+    "忘记",
+    "思考",
+    "知道",
+    "寻找",
+    "找到",
+    "教",
+    "学习",
+    "练习",
+    "学习",
+    "打扫",
+    "洗",
+    "做饭",
+    "旅行",
+    "结婚",
+    "离婚",
+    "开车",
+    "打电话",
+    "购物",
+    "散步",
+    "约定",
+    "预约",
+    "介绍",
+    "说明",
+    "注意",
+    "运动",
+    "参加",
+    "参观",
+    "出发",
+    "到达",
+    "毕业",
+    "入学",
+    "搬家",
+    "紧张",
+    "安心",
+    "担心",
+    "累",
+    "生病",
+    "死亡",
+    "哭",
+    "笑",
+    "生气",
+    "帮助",
+    "敲打",
+    "踢",
+    "投掷",
+    "捡起",
+    "搬运",
+    "保护",
+    "进攻",
+    "道歉",
+    "原谅",
+    "送达",
+    "迎接",
+    "前进",
+    "返回",
+    "停止",
+    "开始",
+    "下（雨、雪）",
+    "干燥"
+  ]
+  },
+	{
+    "id": 3,
+    "title": "形容词",
+    "description": "形容事物的词",
+		  "dialog": [
+    {
+      "speaker": "A",
+      "text": "大きい",
+      "romaji": "Ookii"
+    },
+    {
+      "speaker": "A",
+      "text": "小さい",
+      "romaji": "Chiisai"
+    },
+    {
+      "speaker": "A",
+      "text": "新しい",
+      "romaji": "Atarashii"
+    },
+    {
+      "speaker": "A",
+      "text": "古い",
+      "romaji": "Furui"
+    },
+    {
+      "speaker": "A",
+      "text": "良い",
+      "romaji": "Yoi"
+    },
+    {
+      "speaker": "A",
+      "text": "悪い",
+      "romaji": "Warui"
+    },
+    {
+      "speaker": "A",
+      "text": "暑い",
+      "romaji": "Atsui"
+    },
+    {
+      "speaker": "A",
+      "text": "寒い",
+      "romaji": "Samui"
+    },
+    {
+      "speaker": "A",
+      "text": "暖かい",
+      "romaji": "Atatakai"
+    },
+    {
+      "speaker": "A",
+      "text": "冷たい",
+      "romaji": "Tsumetai"
+    },
+    {
+      "speaker": "A",
+      "text": "高い",
+      "romaji": "Takai"
+    },
+    {
+      "speaker": "A",
+      "text": "低い",
+      "romaji": "Hikui"
+    },
+    {
+      "speaker": "A",
+      "text": "安い",
+      "romaji": "Yasui"
+    },
+    {
+      "speaker": "A",
+      "text": "高い",
+      "romaji": "Takai"
+    },
+    {
+      "speaker": "A",
+      "text": "近い",
+      "romaji": "Chikai"
+    },
+    {
+      "speaker": "A",
+      "text": "遠い",
+      "romaji": "Tooi"
+    },
+    {
+      "speaker": "A",
+      "text": "早い",
+      "romaji": "Hayai"
+    },
+    {
+      "speaker": "A",
+      "text": "遅い",
+      "romaji": "Osoi"
+    },
+    {
+      "speaker": "A",
+      "text": "忙しい",
+      "romaji": "Isogashii"
+    },
+    {
+      "speaker": "A",
+      "text": "楽しい",
+      "romaji": "Tanoshii"
+    },
+    {
+      "speaker": "A",
+      "text": "嬉しい",
+      "romaji": "Ureshii"
+    },
+    {
+      "speaker": "A",
+      "text": "悲しい",
+      "romaji": "Kanashii"
+    },
+    {
+      "speaker": "A",
+      "text": "面白い",
+      "romaji": "Omoshiroi"
+    },
+    {
+      "speaker": "A",
+      "text": "つまらない",
+      "romaji": "Tsumaranai"
+    },
+    {
+      "speaker": "A",
+      "text": "怖い",
+      "romaji": "Kowai"
+    },
+    {
+      "speaker": "A",
+      "text": "優しい",
+      "romaji": "Yasashii"
+    },
+    {
+      "speaker": "A",
+      "text": "厳しい",
+      "romaji": "Kibishii"
+    },
+    {
+      "speaker": "A",
+      "text": "強い",
+      "romaji": "Tsuyoi"
+    },
+    {
+      "speaker": "A",
+      "text": "弱い",
+      "romaji": "Yowai"
+    },
+    {
+      "speaker": "A",
+      "text": "重い",
+      "romaji": "Omoi"
+    },
+    {
+      "speaker": "A",
+      "text": "軽い",
+      "romaji": "Karui"
+    },
+    {
+      "speaker": "A",
+      "text": "広い",
+      "romaji": "Hiroi"
+    },
+    {
+      "speaker": "A",
+      "text": "狭い",
+      "romaji": "Semai"
+    },
+    {
+      "speaker": "A",
+      "text": "深い",
+      "romaji": "Fukai"
+    },
+    {
+      "speaker": "A",
+      "text": "浅い",
+      "romaji": "Asai"
+    },
+    {
+      "speaker": "A",
+      "text": "きれいな",
+      "romaji": "Kirei na"
+    },
+    {
+      "speaker": "A",
+      "text": "静かな",
+      "romaji": "Shizuka na"
+    },
+    {
+      "speaker": "A",
+      "text": "にぎやかな",
+      "romaji": "Nigiyaka na"
+    },
+    {
+      "speaker": "A",
+      "text": "有名な",
+      "romaji": "Yuumei na"
+    },
+    {
+      "speaker": "A",
+      "text": "便利な",
+      "romaji": "Benri na"
+    },
+    {
+      "speaker": "A",
+      "text": "不便な",
+      "romaji": "Fuben na"
+    },
+    {
+      "speaker": "A",
+      "text": "大変な",
+      "romaji": "Taihen na"
+    },
+    {
+      "speaker": "A",
+      "text": "簡単な",
+      "romaji": "Kantan na"
+    },
+    {
+      "speaker": "A",
+      "text": "複雑な",
+      "romaji": "Fukuzatsu na"
+    },
+    {
+      "speaker": "A",
+      "text": "元気な",
+      "romaji": "Genki na"
+    },
+    {
+      "speaker": "A",
+      "text": "親切な",
+      "romaji": "Shinsetsu na"
+    },
+    {
+      "speaker": "A",
+      "text": "暇な",
+      "romaji": "Hima na"
+    },
+    {
+      "speaker": "A",
+      "text": "好きな",
+      "romaji": "Suki na"
+    },
+    {
+      "speaker": "A",
+      "text": "嫌いな",
+      "romaji": "Kirai na"
+    },
+    {
+      "speaker": "A",
+      "text": "上手な",
+      "romaji": "Jouzu na"
+    },
+    {
+      "speaker": "A",
+      "text": "下手な",
+      "romaji": "Heta na"
+    },
+    {
+      "speaker": "A",
+      "text": "重要な",
+      "romaji": "Juuyou na"
+    },
+    {
+      "speaker": "A",
+      "text": "必要な",
+      "romaji": "Hitsuyou na"
+    },
+    {
+      "speaker": "A",
+      "text": "自由な",
+      "romaji": "Jiyuu na"
+    },
+    {
+      "speaker": "A",
+      "text": "特別な",
+      "romaji": "Tokubetsu na"
+    },
+    {
+      "speaker": "A",
+      "text": "安全な",
+      "romaji": "Anzen na"
+    },
+    {
+      "speaker": "A",
+      "text": "危険な",
+      "romaji": "Kiken na"
+    },
+    {
+      "speaker": "A",
+      "text": "正しい",
+      "romaji": "Tadashii"
+    },
+    {
+      "speaker": "A",
+      "text": "間違った",
+      "romaji": "Machigatta"
+    },
+    {
+      "speaker": "A",
+      "text": "厚い",
+      "romaji": "Atsui"
+    },
+    {
+      "speaker": "A",
+      "text": "薄い",
+      "romaji": "Usui"
+    },
+    {
+      "speaker": "A",
+      "text": "甘い",
+      "romaji": "Amai"
+    },
+    {
+      "speaker": "A",
+      "text": "辛い",
+      "romaji": "Karai"
+    },
+    {
+      "speaker": "A",
+      "text": "塩辛い",
+      "romaji": "Shiokarai"
+    },
+    {
+      "speaker": "A",
+      "text": "酸っぱい",
+      "romaji": "Suppai"
+    },
+    {
+      "speaker": "A",
+      "text": "苦い",
+      "romaji": "Nigay"
+    },
+    {
+      "speaker": "A",
+      "text": "楽な",
+      "romaji": "Raku na"
+    },
+    {
+      "speaker": "A",
+      "text": "賑やかな",
+      "romaji": "Nigiyaka na"
+    },
+    {
+      "speaker": "A",
+      "text": "静かな",
+      "romaji": "Shizuka na"
+    },
+    {
+      "speaker": "A",
+      "text": "明るい",
+      "romaji": "Akarui"
+    },
+    {
+      "speaker": "A",
+      "text": "暗い",
+      "romaji": "Kurai"
+    },
+    {
+      "speaker": "A",
+      "text": "正直な",
+      "romaji": "Shoujiki na"
+    },
+    {
+      "speaker": "A",
+      "text": "意地悪な",
+      "romaji": "Ijiwaru na"
+    },
+    {
+      "speaker": "A",
+      "text": "賢い",
+      "romaji": "Kashikoi"
+    },
+    {
+      "speaker": "A",
+      "text": "愚かな",
+      "romaji": "Oroka na"
+    },
+    {
+      "speaker": "A",
+      "text": "素晴らしい",
+      "romaji": "Subarashii"
+    },
+    {
+      "speaker": "A",
+      "text": "醜い",
+      "romaji": "Minikui"
+    },
+    {
+      "speaker": "A",
+      "text": "涼しい",
+      "romaji": "Suzushii"
+    },
+    {
+      "speaker": "A",
+      "text": "熱い",
+      "romaji": "Atsui"
+    },
+    {
+      "speaker": "A",
+      "text": "冷たい",
+      "romaji": "Tsumetai"
+    },
+    {
+      "speaker": "A",
+      "text": "柔らかい",
+      "romaji": "Yawarakai"
+    },
+    {
+      "speaker": "A",
+      "text": "硬い",
+      "romaji": "Katai"
+    },
+    {
+      "speaker": "A",
+      "text": "汚い",
+      "romaji": "Kitanai"
+    },
+    {
+      "speaker": "A",
+      "text": "清潔な",
+      "romaji": "Seiketsu na"
+    },
+    {
+      "speaker": "A",
+      "text": "静かな",
+      "romaji": "Shizuka na"
+    },
+    {
+      "speaker": "A",
+      "text": "短い",
+      "romaji": "Mijikai"
+    },
+    {
+      "speaker": "A",
+      "text": "長い",
+      "romaji": "Nagai"
+    },
+    {
+      "speaker": "A",
+      "text": "太い",
+      "romaji": "Futoi"
+    },
+    {
+      "speaker": "A",
+      "text": "細い",
+      "romaji": "Hosoi"
+    },
+    {
+      "speaker": "A",
+      "text": "楽しい",
+      "romaji": "Tanoshii"
+    },
+    {
+      "speaker": "A",
+      "text": "寂しい",
+      "romaji": "Sabishii"
+    },
+    {
+      "speaker": "A",
+      "text": "美しい",
+      "romaji": "Utsukushii"
+    },
+    {
+      "speaker": "A",
+      "text": "かわいい",
+      "romaji": "Kawaii"
+    }
+  ],
+  "translation": [
+    "大",
+    "小",
+    "新",
+    "旧",
+    "好",
+    "坏",
+    "热",
+    "冷",
+    "温暖",
+    "冰冷",
+    "高",
+    "低",
+    "便宜",
+    "贵",
+    "近",
+    "远",
+    "快",
+    "慢",
+    "忙",
+    "愉快",
+    "高兴",
+    "悲伤",
+    "有趣",
+    "无聊",
+    "可怕",
+    "温柔",
+    "严格",
+    "强",
+    "弱",
+    "重",
+    "轻",
+    "宽广",
+    "狭窄",
+    "深",
+    "浅",
+    "漂亮",
+    "安静",
+    "热闹",
+    "有名",
+    "方便",
+    "不方便",
+    "辛苦",
+    "简单",
+    "复杂",
+    "有精神",
+    "亲切",
+    "空闲",
+    "喜欢",
+    "讨厌",
+    "擅长",
+    "不擅长",
+    "重要",
+    "必要",
+    "自由",
+    "特别",
+    "安全",
+    "危险",
+    "正确",
+    "错误",
+    "厚",
+    "薄",
+    "甜",
+    "辣",
+    "咸",
+    "酸",
+    "苦",
+    "轻松",
+    "热闹",
+    "安静",
+    "明亮",
+    "昏暗",
+    "诚实",
+    "刁难",
+    "聪明",
+    "愚蠢",
+    "精彩",
+    "丑陋",
+    "凉快",
+    "热",
+    "冷",
+    "柔软",
+    "坚硬",
+    "脏",
+    "干净",
+    "安静",
+    "短",
+    "长",
+    "粗",
+    "细",
+    "快乐",
+    "寂寞",
+    "美丽",
+    "可爱"
+  ]
+  },
+	{
+    "id": 4,
+    "title": "副词",
+		"description": "描述程度的词",
+		  "dialog": [
+    {
+      "speaker": "A",
+      "text": "すぐに",
+      "romaji": "Sugu ni"
+    },
+    {
+      "speaker": "A",
+      "text": "ゆっくり",
+      "romaji": "Yukkuri"
+    },
+    {
+      "speaker": "A",
+      "text": "たくさん",
+      "romaji": "Takusan"
+    },
+    {
+      "speaker": "A",
+      "text": "少し",
+      "romaji": "Sukoshi"
+    },
+    {
+      "speaker": "A",
+      "text": "全部",
+      "romaji": "Zenbu"
+    },
+    {
+      "speaker": "A",
+      "text": "よく",
+      "romaji": "Yoku"
+    },
+    {
+      "speaker": "A",
+      "text": "ときどき",
+      "romaji": "Tokidoki"
+    },
+    {
+      "speaker": "A",
+      "text": "あまり",
+      "romaji": "Amari"
+    },
+    {
+      "speaker": "A",
+      "text": "全然",
+      "romaji": "Zenzen"
+    },
+    {
+      "speaker": "A",
+      "text": "いつも",
+      "romaji": "Itsumo"
+    },
+    {
+      "speaker": "A",
+      "text": "もう",
+      "romaji": "Mou"
+    },
+    {
+      "speaker": "A",
+      "text": "まだ",
+      "romaji": "Mada"
+    },
+    {
+      "speaker": "A",
+      "text": "これから",
+      "romaji": "Korekara"
+    },
+    {
+      "speaker": "A",
+      "text": "最近",
+      "romaji": "Saikin"
+    },
+    {
+      "speaker": "A",
+      "text": "さっき",
+      "romaji": "Sakki"
+    },
+    {
+      "speaker": "A",
+      "text": "今",
+      "romaji": "Ima"
+    },
+    {
+      "speaker": "A",
+      "text": "今日",
+      "romaji": "Kyou"
+    },
+    {
+      "speaker": "A",
+      "text": "昨日",
+      "romaji": "Kinou"
+    },
+    {
+      "speaker": "A",
+      "text": "明日",
+      "romaji": "Ashita"
+    },
+    {
+      "speaker": "A",
+      "text": "毎日",
+      "romaji": "Mainichi"
+    },
+    {
+      "speaker": "A",
+      "text": "毎週",
+      "romaji": "Maishuu"
+    },
+    {
+      "speaker": "A",
+      "text": "毎月",
+      "romaji": "Maitsuki"
+    },
+    {
+      "speaker": "A",
+      "text": "毎年",
+      "romaji": "Maitoshi"
+    },
+    {
+      "speaker": "A",
+      "text": "早く",
+      "romaji": "Hayaku"
+    },
+    {
+      "speaker": "A",
+      "text": "遅く",
+      "romaji": "Osoku"
+    },
+    {
+      "speaker": "A",
+      "text": "初めて",
+      "romaji": "Hajimete"
+    },
+    {
+      "speaker": "A",
+      "text": "また",
+      "romaji": "Mata"
+    },
+    {
+      "speaker": "A",
+      "text": "別々に",
+      "romaji": "Betsu betsu ni"
+    },
+    {
+      "speaker": "A",
+      "text": "一緒に",
+      "romaji": "Issho ni"
+    },
+    {
+      "speaker": "A",
+      "text": "本当に",
+      "romaji": "Hontou ni"
+    },
+    {
+      "speaker": "A",
+      "text": "たぶん",
+      "romaji": "Tabun"
+    },
+    {
+      "speaker": "A",
+      "text": "もちろん",
+      "romaji": "Mochiron"
+    },
+    {
+      "speaker": "A",
+      "text": "ぜひ",
+      "romaji": "Zehi"
+    },
+    {
+      "speaker": "A",
+      "text": "きっと",
+      "romaji": "Kitto"
+    },
+    {
+      "speaker": "A",
+      "text": "もし",
+      "romaji": "Moshi"
+    },
+    {
+      "speaker": "A",
+      "text": "たいてい",
+      "romaji": "Taitei"
+    },
+    {
+      "speaker": "A",
+      "text": "特に",
+      "romaji": "Tokuni"
+    },
+    {
+      "speaker": "A",
+      "text": "いろいろ",
+      "romaji": "Iroiro"
+    },
+    {
+      "speaker": "A",
+      "text": "ほとんど",
+      "romaji": "Hotondo"
+    },
+    {
+      "speaker": "A",
+      "text": "ずっと",
+      "romaji": "Zutto"
+    },
+    {
+      "speaker": "A",
+      "text": "やっと",
+      "romaji": "Yatto"
+    },
+    {
+      "speaker": "A",
+      "text": "急に",
+      "romaji": "Kyuu ni"
+    },
+    {
+      "speaker": "A",
+      "text": "簡単に",
+      "romaji": "Kantan ni"
+    },
+    {
+      "speaker": "A",
+      "text": "丁寧に",
+      "romaji": "Teinei ni"
+    },
+    {
+      "speaker": "A",
+      "text": "静かに",
+      "romaji": "Shizuka ni"
+    },
+    {
+      "speaker": "A",
+      "text": "元気に",
+      "romaji": "Genki ni"
+    },
+    {
+      "speaker": "A",
+      "text": "安全に",
+      "romaji": "Anzen ni"
+    },
+    {
+      "speaker": "A",
+      "text": "正確に",
+      "romaji": "Seikaku ni"
+    },
+    {
+      "speaker": "A",
+      "text": "適当に",
+      "romaji": "Tekitou ni"
+    },
+    {
+      "speaker": "A",
+      "text": "自由に",
+      "romaji": "Jiyuu ni"
+    },
+    {
+      "speaker": "A",
+      "text": "真面目に",
+      "romaji": "Majime ni"
+    },
+    {
+      "speaker": "A",
+      "text": "楽しく",
+      "romaji": "Tanoshiku"
+    },
+    {
+      "speaker": "A",
+      "text": "悲しく",
+      "romaji": "Kanashiku"
+    },
+    {
+      "speaker": "A",
+      "text": "激しく",
+      "romaji": "Hageshiku"
+    },
+    {
+      "speaker": "A",
+      "text": "静かに",
+      "romaji": "Shizuka ni"
+    },
+    {
+      "speaker": "A",
+      "text": "軽く",
+      "romaji": "Karuku"
+    },
+    {
+      "speaker": "A",
+      "text": "重く",
+      "romaji": "Omoku"
+    },
+    {
+      "speaker": "A",
+      "text": "熱心に",
+      "romaji": "Nesshin ni"
+    },
+    {
+      "speaker": "A",
+      "text": "慎重に",
+      "romaji": "Shinchou ni"
+    },
+    {
+      "speaker": "A",
+      "text": "大切に",
+      "romaji": "Taisetsu ni"
+    },
+    {
+      "speaker": "A",
+      "text": "自然に",
+      "romaji": "Shizen ni"
+    },
+    {
+      "speaker": "A",
+      "text": "正式に",
+      "romaji": "Seishiki ni"
+    },
+    {
+      "speaker": "A",
+      "text": "直接",
+      "romaji": "Chokusetsu"
+    },
+    {
+      "speaker": "A",
+      "text": "間接的に",
+      "romaji": "Kansetsu teki ni"
+    },
+    {
+      "speaker": "A",
+      "text": "本格的に",
+      "romaji": "Honkaku teki ni"
+    },
+    {
+      "speaker": "A",
+      "text": "偶然に",
+      "romaji": "Guuzen ni"
+    },
+    {
+      "speaker": "A",
+      "text": "確実に",
+      "romaji": "Kakujitsu ni"
+    },
+    {
+      "speaker": "A",
+      "text": "突然に",
+      "romaji": "Totsuzen ni"
+    },
+    {
+      "speaker": "A",
+      "text": "慎重に",
+      "romaji": "Shinchou ni"
+    },
+    {
+      "speaker": "A",
+      "text": "適切に",
+      "romaji": "Tekisetsu ni"
+    },
+    {
+      "speaker": "A",
+      "text": "積極的に",
+      "romaji": "Sekkyokuteki ni"
+    },
+    {
+      "speaker": "A",
+      "text": "消極的に",
+      "romaji": "Shoukyokuteki ni"
+    },
+    {
+      "speaker": "A",
+      "text": "幸せに",
+      "romaji": "Shiawase ni"
+    },
+    {
+      "speaker": "A",
+      "text": "不幸に",
+      "romaji": "Fukou ni"
+    },
+    {
+      "speaker": "A",
+      "text": "楽に",
+      "romaji": "Raku ni"
+    },
+    {
+      "speaker": "A",
+      "text": "困難に",
+      "romaji": "Konnan ni"
+    },
+    {
+      "speaker": "A",
+      "text": "感動的に",
+      "romaji": "Kandou teki ni"
+    },
+    {
+      "speaker": "A",
+      "text": "印象的に",
+      "romaji": "Inshou teki ni"
+    },
+    {
+      "speaker": "A",
+      "text": "伝統的に",
+      "romaji": "Dentou teki ni"
+    },
+    {
+      "speaker": "A",
+      "text": "科学的に",
+      "romaji": "Kagaku teki ni"
+    },
+    {
+      "speaker": "A",
+      "text": "文化的に",
+      "romaji": "Bunka teki ni"
+    },
+    {
+      "speaker": "A",
+      "text": "経済的に",
+      "romaji": "Keizai teki ni"
+    },
+    {
+      "speaker": "A",
+      "text": "政治的に",
+      "romaji": "Seiji teki ni"
+    },
+    {
+      "speaker": "A",
+      "text": "歴史的に",
+      "romaji": "Rekishi teki ni"
+    },
+    {
+      "speaker": "A",
+      "text": "国際的に",
+      "romaji": "Kokusai teki ni"
+    },
+    {
+      "speaker": "A",
+      "text": "国内的に",
+      "romaji": "Kokunai teki ni"
+    },
+    {
+      "speaker": "A",
+      "text": "個人的に",
+      "romaji": "Kojin teki ni"
+    },
+    {
+      "speaker": "A",
+      "text": "社会的に",
+      "romaji": "Shakai teki ni"
+    }
+  ],
+  "translation": [
+    "立刻",
+    "慢慢地",
+    "很多",
+    "一点",
+    "全部",
+    "经常",
+    "偶尔",
+    "不太",
+    "完全不",
+    "总是",
+    "已经",
+    "还",
+    "从现在起",
+    "最近",
+    "刚才",
+    "现在",
+    "今天",
+    "昨天",
+    "明天",
+    "每天",
+    "每周",
+    "每月",
+    "每年",
+    "早点",
+    "晚点",
+    "第一次",
+    "又、再",
+    "分别",
+    "一起",
+    "真的",
+    "大概",
+    "当然",
+    "一定",
+    "一定（推测）",
+    "如果",
+    "大体上",
+    "特别是",
+    "各种各样",
+    "几乎",
+    "一直",
+    "终于",
+    "突然",
+    "简单地",
+    "仔细地",
+    "安静地",
+    "精神地",
+    "安全地",
+    "准确地",
+    "适当地",
+    "自由地",
+    "认真地",
+    "愉快地",
+    "悲伤地",
+    "激烈地",
+    "安静地",
+    "轻轻地",
+    "沉重地",
+    "热心地",
+    "慎重地",
+    "珍惜地",
+    "自然地",
+    "正式地",
+    "直接",
+    "间接地",
+    "正式地",
+    "偶然地",
+    "确实地",
+    "突然地",
+    "慎重地",
+    "适切地",
+    "积极地",
+    "消极地",
+    "幸福地",
+    "不幸地",
+    "轻松地",
+    "困难地",
+    "感动地",
+    "印象深地",
+    "传统地",
+    "科学地",
+    "文化地",
+    "经济地",
+    "政治地",
+    "历史地",
+    "国际地",
+    "国内地",
+    "个人地",
+    "社会地"
+  ]
+  },
+	{
+    "id": 5,
+    "title": "短语",
+    "description": "常用的短语（phrases）",
+		"dialog": [
+    {
+      "speaker": "A",
+      "text": "おはようございます",
+      "romaji": "Ohayou gozaimasu"
+    },
+    {
+      "speaker": "A",
+      "text": "こんにちは",
+      "romaji": "Konnichiwa"
+    },
+    {
+      "speaker": "A",
+      "text": "こんばんは",
+      "romaji": "Konbanwa"
+    },
+    {
+      "speaker": "A",
+      "text": "おやすみなさい",
+      "romaji": "Oyasumi nasai"
+    },
+    {
+      "speaker": "A",
+      "text": "さようなら",
+      "romaji": "Sayounara"
+    },
+    {
+      "speaker": "A",
+      "text": "またね",
+      "romaji": "Mata ne"
+    },
+    {
+      "speaker": "A",
+      "text": "ありがとうございます",
+      "romaji": "Arigatou gozaimasu"
+    },
+    {
+      "speaker": "A",
+      "text": "どういたしまして",
+      "romaji": "Dou itashimashite"
+    },
+    {
+      "speaker": "A",
+      "text": "すみません",
+      "romaji": "Sumimasen"
+    },
+    {
+      "speaker": "A",
+      "text": "ごめんなさい",
+      "romaji": "Gomen nasai"
+    },
+    {
+      "speaker": "A",
+      "text": "はい",
+      "romaji": "Hai"
+    },
+    {
+      "speaker": "A",
+      "text": "いいえ",
+      "romaji": "Iie"
+    },
+    {
+      "speaker": "A",
+      "text": "お願いします",
+      "romaji": "Onegai shimasu"
+    },
+    {
+      "speaker": "A",
+      "text": "よろしくお願いします",
+      "romaji": "Yoroshiku onegai shimasu"
+    },
+    {
+      "speaker": "A",
+      "text": "いってきます",
+      "romaji": "Ittekimasu"
+    },
+    {
+      "speaker": "A",
+      "text": "いってらっしゃい",
+      "romaji": "Itterasshai"
+    },
+    {
+      "speaker": "A",
+      "text": "ただいま",
+      "romaji": "Tadaima"
+    },
+    {
+      "speaker": "A",
+      "text": "おかえりなさい",
+      "romaji": "Okaeri nasai"
+    },
+    {
+      "speaker": "A",
+      "text": "初めまして",
+      "romaji": "Hajimemashite"
+    },
+    {
+      "speaker": "A",
+      "text": "元気ですか",
+      "romaji": "Genki desu ka"
+    },
+    {
+      "speaker": "A",
+      "text": "元気です",
+      "romaji": "Genki desu"
+    },
+    {
+      "speaker": "A",
+      "text": "お名前は何ですか",
+      "romaji": "Onamae wa nan desu ka"
+    },
+    {
+      "speaker": "A",
+      "text": "私の名前は〜です",
+      "romaji": "Watashi no namae wa ~ desu"
+    },
+    {
+      "speaker": "A",
+      "text": "どこから来ましたか",
+      "romaji": "Doko kara kimashita ka"
+    },
+    {
+      "speaker": "A",
+      "text": "〜から来ました",
+      "romaji": "~ kara kimashita"
+    },
+    {
+      "speaker": "A",
+      "text": "何歳ですか",
+      "romaji": "Nansai desu ka"
+    },
+    {
+      "speaker": "A",
+      "text": "〜歳です",
+      "romaji": "~ sai desu"
+    },
+    {
+      "speaker": "A",
+      "text": "趣味は何ですか",
+      "romaji": "Shumi wa nan desu ka"
+    },
+    {
+      "speaker": "A",
+      "text": "趣味は〜です",
+      "romaji": "Shumi wa ~ desu"
+    },
+    {
+      "speaker": "A",
+      "text": "これは何ですか",
+      "romaji": "Kore wa nan desu ka"
+    },
+    {
+      "speaker": "A",
+      "text": "〜です",
+      "romaji": "~ desu"
+    },
+    {
+      "speaker": "A",
+      "text": "どこですか",
+      "romaji": "Doko desu ka"
+    },
+    {
+      "speaker": "A",
+      "text": "いくらですか",
+      "romaji": "Ikura desu ka"
+    },
+    {
+      "speaker": "A",
+      "text": "わかりますか",
+      "romaji": "Wakarimasu ka"
+    },
+    {
+      "speaker": "A",
+      "text": "はい、わかります",
+      "romaji": "Hai, wakarimasu"
+    },
+    {
+      "speaker": "A",
+      "text": "いいえ、わかりません",
+      "romaji": "Iie, wakarimasen"
+    },
+    {
+      "speaker": "A",
+      "text": "もう一度お願いします",
+      "romaji": "Mou ichido onegai shimasu"
+    },
+    {
+      "speaker": "A",
+      "text": "ゆっくり話してください",
+      "romaji": "Yukkuri hanashite kudasai"
+    },
+    {
+      "speaker": "A",
+      "text": "日本語が少し話せます",
+      "romaji": "Nihongo ga sukoshi hanasemasu"
+    },
+    {
+      "speaker": "A",
+      "text": "英語を話せますか",
+      "romaji": "Eigo o hanasemasu ka"
+    },
+    {
+      "speaker": "A",
+      "text": "はい、少し話せます",
+      "romaji": "Hai, sukoshi hanasemasu"
+    },
+    {
+      "speaker": "A",
+      "text": "助けてください",
+      "romaji": "Tasukete kudasai"
+    },
+    {
+      "speaker": "A",
+      "text": "大丈夫ですか",
+      "romaji": "Daijoubu desu ka"
+    },
+    {
+      "speaker": "A",
+      "text": "大丈夫です",
+      "romaji": "Daijoubu desu"
+    },
+    {
+      "speaker": "A",
+      "text": "お元気で",
+      "romaji": "Ogenki de"
+    },
+    {
+      "speaker": "A",
+      "text": "お大事に",
+      "romaji": "Odaiji ni"
+    },
+    {
+      "speaker": "A",
+      "text": "気をつけて",
+      "romaji": "Ki o tsukete"
+    },
+    {
+      "speaker": "A",
+      "text": "いらっしゃいませ",
+      "romaji": "Irasshaimase"
+    },
+    {
+      "speaker": "A",
+      "text": "どうぞ",
+      "romaji": "Douzo"
+    },
+    {
+      "speaker": "A",
+      "text": "こちらへどうぞ",
+      "romaji": "Kochira e douzo"
+    },
+    {
+      "speaker": "A",
+      "text": "失礼します",
+      "romaji": "Shitsurei shimasu"
+    },
+    {
+      "speaker": "A",
+      "text": "失礼しました",
+      "romaji": "Shitsurei shimashita"
+    },
+    {
+      "speaker": "A",
+      "text": "少々お待ちください",
+      "romaji": "Shou shou omachi kudasai"
+    },
+    {
+      "speaker": "A",
+      "text": "お待たせしました",
+      "romaji": "Omatase shimashita"
+    },
+    {
+      "speaker": "A",
+      "text": "いかがですか",
+      "romaji": "Ikaga desu ka"
+    },
+    {
+      "speaker": "A",
+      "text": "いいですね",
+      "romaji": "Ii desu ne"
+    },
+    {
+      "speaker": "A",
+      "text": "本当ですか",
+      "romaji": "Hontou desu ka"
+    },
+    {
+      "speaker": "A",
+      "text": "本当です",
+      "romaji": "Hontou desu"
+    },
+    {
+      "speaker": "A",
+      "text": "冗談です",
+      "romaji": "Joudan desu"
+    },
+    {
+      "speaker": "A",
+      "text": "頑張ってください",
+      "romaji": "Ganbatte kudasai"
+    },
+    {
+      "speaker": "A",
+      "text": "お疲れ様でした",
+      "romaji": "Otsukaresama deshita"
+    },
+    {
+      "speaker": "A",
+      "text": "おめでとうございます",
+      "romaji": "Omedetou gozaimasu"
+    },
+    {
+      "speaker": "A",
+      "text": "気にしないでください",
+      "romaji": "Ki ni shinaide kudasai"
+    },
+    {
+      "speaker": "A",
+      "text": "どうしたんですか",
+      "romaji": "Doushitan desu ka"
+    },
+    {
+      "speaker": "A",
+      "text": "ちょっと待ってください",
+      "romaji": "Chotto matte kudasai"
+    },
+    {
+      "speaker": "A",
+      "text": "お願いします",
+      "romaji": "Onegai shimasu"
+    },
+    {
+      "speaker": "A",
+      "text": "助かります",
+      "romaji": "Tasukarimasu"
+    },
+    {
+      "speaker": "A",
+      "text": "行きましょう",
+      "romaji": "Ikimashou"
+    },
+    {
+      "speaker": "A",
+      "text": "帰りましょう",
+      "romaji": "Kaerimashou"
+    },
+    {
+      "speaker": "A",
+      "text": "始めましょう",
+      "romaji": "Hajimemashou"
+    },
+    {
+      "speaker": "A",
+      "text": "終わりましょう",
+      "romaji": "Owarimashou"
+    },
+    {
+      "speaker": "A",
+      "text": "いただきます",
+      "romaji": "Itadakimasu"
+    },
+    {
+      "speaker": "A",
+      "text": "ごちそうさまでした",
+      "romaji": "Gochisousama deshita"
+    },
+    {
+      "speaker": "A",
+      "text": "〜してください",
+      "romaji": "~ shite kudasai"
+    },
+    {
+      "speaker": "A",
+      "text": "〜しないでください",
+      "romaji": "~ shinaide kudasai"
+    },
+    {
+      "speaker": "A",
+      "text": "気をつけてください",
+      "romaji": "Ki o tsukete kudasai"
+    },
+    {
+      "speaker": "A",
+      "text": "遅れてすみません",
+      "romaji": "Okurete sumimasen"
+    },
+    {
+      "speaker": "A",
+      "text": "わかりました",
+      "romaji": "Wakarimashita"
+    },
+    {
+      "speaker": "A",
+      "text": "知りません",
+      "romaji": "Shirimasen"
+    },
+    {
+      "speaker": "A",
+      "text": "考えます",
+      "romaji": "Kangaemasu"
+    },
+    {
+      "speaker": "A",
+      "text": "見せてください",
+      "romaji": "Misete kudasai"
+    },
+    {
+      "speaker": "A",
+      "text": "開けてください",
+      "romaji": "Aketekudasai"
+    },
+    {
+      "speaker": "A",
+      "text": "閉めてください",
+      "romaji": "Shimete kudasai"
+    },
+    {
+      "speaker": "A",
+      "text": "入ってください",
+      "romaji": "Haitte kudasai"
+    },
+    {
+      "speaker": "A",
+      "text": "座ってください",
+      "romaji": "Suwatte kudasai"
+    },
+    {
+      "speaker": "A",
+      "text": "立ってください",
+      "romaji": "Tatte kudasai"
+    },
+    {
+      "speaker": "A",
+      "text": "書いてください",
+      "romaji": "Kaite kudasai"
+    }
+  ],
+  "translation": [
+    "早上好",
+    "你好",
+    "晚上好",
+    "晚安",
+    "再见",
+    "回头见",
+    "谢谢",
+    "不客气",
+    "对不起 / 劳驾",
+    "对不起",
+    "是的",
+    "不是",
+    "拜托了",
+    "请多关照",
+    "我出门了",
+    "路上小心",
+    "我回来了",
+    "欢迎回来",
+    "初次见面",
+    "你好吗？",
+    "我很好",
+    "你叫什么名字？",
+    "我的名字是～",
+    "你从哪里来？",
+    "我从～来",
+    "你几岁了？",
+    "～岁",
+    "你的兴趣是什么？",
+    "我的兴趣是～",
+    "这是什么？",
+    "是～",
+    "在哪里？",
+    "多少钱？",
+    "明白吗？",
+    "是的，明白",
+    "不，不明白",
+    "请再说一遍",
+    "请说慢一点",
+    "我会说一点日语",
+    "你会说英语吗？",
+    "是的，会说一点",
+    "请帮帮我",
+    "没事吧？",
+    "没事",
+    "保重",
+    "请多保重",
+    "请小心",
+    "欢迎光临",
+    "请",
+    "这边请",
+    "打扰了",
+    "失礼了",
+    "请稍等",
+    "让您久等了",
+    "怎么样？",
+    "不错呢",
+    "真的吗？",
+    "是真的",
+    "开玩笑的",
+    "请加油",
+    "辛苦了",
+    "恭喜",
+    "请别介意",
+    "怎么了？",
+    "请稍等一下",
+    "拜托了",
+    "帮大忙了",
+    "一起去吧",
+    "一起回去吧",
+    "开始吧",
+    "结束吧",
+    "我要开动了",
+    "我吃饱了",
+    "请～",
+    "请不要～",
+    "请小心",
+    "抱歉迟到了",
+    "明白了",
+    "不知道",
+    "我考虑一下",
+    "请给我看看",
+    "请打开",
+    "请关上",
+    "请进",
+    "请坐",
+    "请站起来",
+    "请写下来"
+  ]
+}
+]

@@ -817,7 +817,7 @@
     },
     {
         "id": 37,
-        "title": "开银行账户",
+        "title": "开账户",
         "description": "在银行办理开户。",
         "dialog": [
             { "speaker": "A", "text": "新しい口座を開きたいです。", "romaji": "Atarashii kouza o hirakitai desu." },
@@ -1763,7 +1763,7 @@
     },
     {
         "id": 97,
-        "title": "修理自行车",
+        "title": "修自行车",
         "description": "在自行车店修车的对话。",
         "dialog": [
             { "speaker": "A", "text": "自転車のタイヤがパンクしました。", "romaji": "Jitensha no taiya ga panku shimashita." },
