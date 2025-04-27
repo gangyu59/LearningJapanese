@@ -231,18 +231,6 @@ window.speechSynthesis.onvoiceschanged = () => {
 //    console.log("语音列表已加载。");
 };
 
-// 验证场景格式
-function validateSceneFormat(scene) {
-    return (
-        scene &&
-        typeof scene.title === "string" &&
-        typeof scene.description === "string" &&
-        Array.isArray(scene.dialog) &&
-        scene.dialog.every(d => d.speaker && d.text && d.romaji) &&
-        Array.isArray(scene.translation)
-    );
-}
-
 // 与 GPT 交互生成新场景
 async function generateScene() {
     const descriptionInput = document.getElementById("newSceneDescription").value.trim();
@@ -273,7 +261,7 @@ async function generateScene() {
         "B: 中文翻译2"
     ]
 }
-对话最多 6 句。
+请直接返回 JSON 内容，不要添加解释文字或代码块。对话最多6句。
 描述: ${descriptionInput}`;
 
     const messages = [
@@ -281,12 +269,14 @@ async function generateScene() {
         { "role": "user", "content": userMessage }
     ];
 
+//    console.log("message =", messages);
+
     try {
         const response = await fetch('https://gpt4-111-us.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'api-key': '84fba46b577b46f58832ef36527e41d4' // 替换为您的实际 API 密钥
+                'api-key': '84fba46b577b46f58832ef36527e41d4' // 替换为你的实际 API 密钥
             },
             body: JSON.stringify({
                 messages: messages,
@@ -305,20 +295,16 @@ async function generateScene() {
 
         let generatedScene;
         try {
-            // 清理返回的字符串内容
-            const cleanedContent = rawContent.trim();
-
-            // 尝试解析 JSON
+            const cleanedContent = cleanGPTContent(rawContent);
             generatedScene = JSON.parse(cleanedContent);
 
-            // 验证格式是否符合要求
             if (!validateSceneFormat(generatedScene)) {
                 console.error("Invalid scene format received from GPT:", generatedScene);
                 alert("生成的场景格式不正确！");
                 return;
             }
 
-            // 显示生成的场景
+            // 成功，显示生成的场景
             displayScene(generatedScene);
         } catch (error) {
             console.error("Error parsing or validating the scene:", error);
@@ -328,10 +314,45 @@ async function generateScene() {
         console.error("生成场景失败：", error);
         alert("生成场景失败，请检查网络或 API 配置。");
     } finally {
-        // 隐藏加载提示并启用按钮
         hourglass.style.display = 'none';
         generateSceneBtn.disabled = false;
     }
+}
+
+// 清理 GPT 返回内容，提取干净的 JSON
+function cleanGPTContent(rawContent) {
+    let content = rawContent.trim();
+
+    // 如果包裹了 ```json``` 或 ```，去掉
+    if (content.startsWith("```json")) {
+        content = content.replace(/^```json/, "").replace(/```$/, "").trim();
+    } else if (content.startsWith("```")) {
+        content = content.replace(/^```/, "").replace(/```$/, "").trim();
+    }
+
+    // 如果 GPT 还在前面添加了 “以下是生成的内容：” 之类的，需要找第一个 { 开始
+    const firstBraceIndex = content.indexOf('{');
+    if (firstBraceIndex > 0) {
+        content = content.slice(firstBraceIndex);
+    }
+
+    return content;
+}
+
+// 验证场景格式是否正确
+function validateSceneFormat(scene) {
+    if (!scene || typeof scene !== 'object') return false;
+    if (typeof scene.title !== "string" || scene.title.trim() === "") return false;
+    if (typeof scene.description !== "string" || scene.description.trim() === "") return false;
+    if (!Array.isArray(scene.dialog) || scene.dialog.length === 0) return false;
+    if (!scene.dialog.every(d => d.speaker && typeof d.speaker === "string" &&
+                                  d.text && typeof d.text === "string" &&
+                                  d.romaji && typeof d.romaji === "string")) {
+        return false;
+    }
+    if (!Array.isArray(scene.translation) || scene.translation.length === 0) return false;
+
+    return true;
 }
 
 // 添加新场景到 JSON 数据中
