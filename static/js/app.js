@@ -276,7 +276,7 @@ async function generateScene() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'api-key': '84fba46b577b46f58832ef36527e41d4' // 替换为你的实际 API 密钥
+                'api-key': 'mykey' // 替换为你的实际 API 密钥
             },
             body: JSON.stringify({
                 messages: messages,
